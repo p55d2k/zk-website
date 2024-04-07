@@ -68,11 +68,13 @@ const Hero = () => {
       </div>
       <span
         id="typeAnim"
-        className="block text-3xl md:text-4xl mt-4 text-center opacity-0 translate-y-20 max-w-[80vw]"
+        className="block text-2xl sm:text-3xl md:text-4xl mt-4 text-center opacity-0 translate-y-20 max-w-[80vw]"
       >
-        and i&apos;m a{" "}
+        a{" "}
         <TypeAnimation
           sequence={[
+            1500,
+            "software engineer",
             1500,
             "frontend developer",
             1500,

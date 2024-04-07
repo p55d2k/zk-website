@@ -1,17 +1,20 @@
-import About from "@/components/About";
-import Hero from "@/components/Hero";
+import Projects from "@/components/sections/Projects";
+import Skills from "@/components/subsections/Skills";
+import Hobbies from "@/components/subsections/Hobbies";
+import About from "@/components/sections/About";
+import Hero from "@/components/sections/Hero";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <div className="flex flex-col space-y-32 mt-20 mb-32">
+      <div className="flex flex-col mb-32" id="mainContent">
         <About />
-        {/* <Skills />
+        <Skills />
         <Hobbies />
-        <Experience />
+        {/* <Experience /> */}
         <Projects />
-        <Contact /> */}
+        {/* <Contact /> */}
       </div>
     </div>
   );

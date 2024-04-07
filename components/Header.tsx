@@ -27,22 +27,24 @@ const Header = () => {
   return (
     <div className="flex flex-col">
       <header className="w-full bg-slate-900 text-white py-6 px-8 flex flex-row justify-between h-[10vh] items-center">
-        <Image
-          unoptimized
-          src="/favicon.ico"
-          alt=""
-          width={40}
-          height={40}
-          className="block sm:hidden"
-        />
-        <Image
-          unoptimized
-          src="/favicon.ico"
-          alt=""
-          width={50}
-          height={60}
-          className="hidden sm:block"
-        />
+        <Link href="/">
+          <Image
+            unoptimized
+            src="/favicon.ico"
+            alt=""
+            width={40}
+            height={40}
+            className="block sm:hidden"
+          />
+          <Image
+            unoptimized
+            src="/favicon.ico"
+            alt=""
+            width={50}
+            height={60}
+            className="hidden sm:block"
+          />
+        </Link>
         <div
           className="flex sm:hidden items-center justify-center cursor-pointer"
           onClick={toggleMenu}
@@ -50,13 +52,13 @@ const Header = () => {
           {menuOpen ? <IoMdClose size={32} /> : <CiMenuBurger size={32} />}
         </div>
         <div className="hidden sm:flex sm:flex-row sm:space-x-4 items-center justify-center">
-          <Link href={"#about"} className="header-link">
+          <Link href={"/#about"} className="header-link">
             About
           </Link>
-          <Link href={"#portfolio"} className="header-link">
-            Portfolio
+          <Link href={"/#projects"} className="header-link">
+            Projects
           </Link>
-          <Link href={"#contact"} className="header-link">
+          <Link href={"/#contact"} className="header-link">
             Contact
           </Link>
         </div>
@@ -64,19 +66,19 @@ const Header = () => {
       {menuOpen && (
         <div className="w-full bg-slate-900 text-white pt-6 px-8 flex flex-row justify-between sm:hidden transition-all h-[10vh]">
           <Link
-            href={"#about"}
+            href={"/#about"}
             className="footer-link !border-0 !hover:p-0 !text-center"
           >
             About
           </Link>
           <Link
-            href={"#portfolio"}
+            href={"/#projects"}
             className="footer-link !border-0 !hover:p-0 !text-center"
           >
-            Portfolio
+            Projects
           </Link>
           <Link
-            href={"#contact"}
+            href={"/#contact"}
             className="footer-link !border-0 !hover:p-0 !text-center"
           >
             Contact
