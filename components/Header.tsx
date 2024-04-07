@@ -29,7 +29,7 @@ const Header = () => {
       <header className="w-full bg-slate-900 text-white py-6 px-8 flex flex-row justify-between h-[10vh] items-center">
         <Image
           unoptimized
-          src="/icon.jpeg"
+          src="/favicon.ico"
           alt=""
           width={40}
           height={40}
@@ -37,7 +37,7 @@ const Header = () => {
         />
         <Image
           unoptimized
-          src="/icon.jpeg"
+          src="/favicon.ico"
           alt=""
           width={50}
           height={60}

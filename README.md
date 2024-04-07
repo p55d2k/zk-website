@@ -48,9 +48,3 @@ I never give permission to publish or present any of my projects as your own.
 <p align="right">( <a href="#top">back to top</a> )</p>
 
 Template taken from [Frans Jesky's](https://github.com/fransjesky) [Project Sinclair](https://github.com/fransjesky/sinclair) README.
-
-<!-- Replace the following in this template file: -->
-<!-- zk-website -->
-<!-- ZKWebsite -->
-<!-- /public/favicon.ico -->
-<!-- {projectDescription} -->
