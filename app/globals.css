@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* custom classNames */
+.header-link {
+  @apply cursor-pointer text-lg md:text-xl border-b-2 border-white pb-0 hover:pb-1 transition-all ease-in-out;
+}
+
+.footer-link {
+  @apply cursor-pointer text-xl md:text-2xl border-b-2 border-black pb-0 mt-1 mb-1 hover:pb-2 hover:mt-0 hover:mb-0 transition-all ease-in-out active:text-blue-500;
+}
+
+.button {
+  @apply cursor-pointer font-medium text-lg text-center w-full md:text-xl bg-slate-600 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition-all ease-in-out;
+}
