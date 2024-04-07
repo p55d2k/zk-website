@@ -2,7 +2,7 @@
 <br/>
 <div align="center">
   <a href="https://github.com/p55d2k/zk-website">
-    <img src="/public/favicon.ico" alt="Logo" width="100" height="100">
+    <img src="/app/favicon.ico" alt="Logo" width="100" height="100">
   </a>
   <h1>ZKWebsite</h1>
 
