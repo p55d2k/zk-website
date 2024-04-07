@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zhi Kai | Software Engineer",
+  title: "Zhi Kai • Software Engineer",
   description:
     "Hi, I'm Zhi Kai, a software engineer specialised in frontend development. I'm also a high school student in Singapore, and enjoy creating beautiful and functional web applications.",
 };
