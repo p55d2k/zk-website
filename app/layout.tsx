@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import { RecoilRoot } from "@/lib/recoil";
 import "./globals.css";
 
-import SocialIcons from "@/components/modules/SocialIcons";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -30,7 +29,6 @@ export default function RootLayout({
             {children}
           </div>
           <Footer />
-          <SocialIcons />
         </RecoilRoot>
       </body>
     </html>

@@ -9,7 +9,7 @@ const experience = [
     logo: "/imgs/xcidic.svg",
     link: "https://xcidic.com",
     description:
-      "I was really excited for my internship, mainly to gain experiences while meeting new people. Worked on the frontend of a company's website using Next.js and Tailwind CSS.",
+      "I was really excited for my internship, mainly to gain experiences while meeting new people. Worked on the frontend of another company's website using Next.js and Tailwind CSS.",
   },
 ];
 

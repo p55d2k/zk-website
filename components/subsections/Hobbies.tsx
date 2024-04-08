@@ -79,9 +79,7 @@ const Hobbies = () => {
             width={400}
             height={500}
           />
-          <div className="text-center italic">
-            Me riding a camel in Hatta (حتا), Dubai, UAE 2023
-          </div>
+          <div className="text-center italic">Me in Pisa, Italy, 2019</div>
         </div>
       </div>
     </div>

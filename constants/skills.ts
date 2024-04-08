@@ -6,6 +6,7 @@ import {
   FaGithub,
   FaCloudflare,
   FaNodeJs,
+  FaRegUserCircle,
 } from "react-icons/fa";
 import { TbBrandReactNative, TbBrandVscode } from "react-icons/tb";
 import {
@@ -29,6 +30,8 @@ import {
   SiPrettier,
   SiBun,
   SiYarn,
+  SiMui,
+  SiAstro,
 } from "react-icons/si";
 import { GoCopilot } from "react-icons/go";
 import { RiOpenaiFill } from "react-icons/ri";
@@ -43,6 +46,8 @@ export const TailwindCSS = { name: "Tailwind CSS", icon: SiTailwindcss };
 export const ReactNative = { name: "React Native", icon: TbBrandReactNative };
 export const Expo = { name: "Expo", icon: SiExpo };
 export const Redux = { name: "Redux", icon: SiRedux };
+export const MUI = { name: "Material-UI", icon: SiMui };
+export const Astro = { name: "Astro", icon: SiAstro };
 
 const frontEnd = [
   HTML5,
@@ -55,13 +60,15 @@ const frontEnd = [
   ReactNative,
   Expo,
   Redux,
+  MUI,
 ];
 
 export const ExpressJS = { name: "ExpressJS", icon: SiExpress };
 export const Firebase = { name: "Firebase", icon: SiFirebase };
 export const MongoDB = { name: "MongoDB", icon: SiMongodb };
+export const Clerk = { name: "Clerk", icon: FaRegUserCircle };
 
-const backEnd = [ExpressJS, Firebase, MongoDB];
+const backEnd = [ExpressJS, Firebase, MongoDB, Clerk];
 
 export const VSCode = { name: "VSCode", icon: TbBrandVscode };
 export const macOS = { name: "macOS", icon: SiMacos };

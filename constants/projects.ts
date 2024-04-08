@@ -1,10 +1,17 @@
 import { IconType } from "react-icons";
 import {
+  Astro,
+  CSS3,
+  Clerk,
+  ExpressJS,
   Firebase,
   HTML5,
   JavaScript,
+  MUI,
   NextJS,
   Python,
+  ReactJS,
+  Redux,
   Selenium,
   TailwindCSS,
   TypeScript,
@@ -40,7 +47,7 @@ const projects: Project[] = [
     description:
       "A Netflix clone made with NextJS, TailwindCSS, and TypeScript. It fully has authentication and a database with firebase and firestore.",
     detailedDescription:
-      "I wanted to make this project when I was loved to binge-watch TV shows and movies. I wanted to make a project that would be useful for me, and I thought that a Netflix clone would be a good idea. I learned a lot about how to use Firebase and Firestore while making this project.",
+      "I wanted to make this project when I was loved to binge-watch TV shows and movies. I wanted to make a project that would be useful for me, and I thought that a Netflix clone would be a fun. I learned a lot about how to use Firebase and Firestore while making this project.",
     techStack: [NextJS, TypeScript, TailwindCSS, Firebase],
     github: "https://github.com/p55d2k/zkflix-next",
     live: "https://zkflix-next.vercel.app",
@@ -49,9 +56,9 @@ const projects: Project[] = [
   {
     name: "PyF Converter",
     description:
-      "Inspired by JSF***, PyF is a Python obfuscator that converts Python code into unreadable code.",
+      "Inspired by JSF, PyF is a Python obfuscator that converts Python code into unreadable code.",
     detailedDescription:
-      "I was inspired by JSF***, a JavaScript obfuscator that converts JavaScript code into unreadable code. I wanted to make a similar project, but for Python. For this project, it was rather simple, hence I used HTML and Javascript while using the Tailwind CSS Play CDN. I learned about Javascript and its string functions while developing this project.",
+      "I was inspired by JSF, a JavaScript obfuscator that converts JavaScript code into unreadable code. I wanted to make a similar project, but for Python. For this project, it was rather simple, hence I used HTML and Javascript while using the Tailwind CSS Play CDN. I learned about Javascript and its string functions while developing this project.",
     techStack: [HTML5, JavaScript, TailwindCSS],
     github: "https://github.com/p55d2k/pyf-converter",
     live: "https://pyf-converter.vercel.app",
@@ -62,12 +69,72 @@ const projects: Project[] = [
     description:
       "My school has a Zaobao schools website to practice Chinese exercises, but I created a bot to do it for you.",
     detailedDescription:
-      "As my school has a zaobao schools website to practice Chinese exercises, I thought that it would be a good idea to make a bot that would do the exercises for you, and get to the top of the leaderboard. I learned about how to use Selenium and how to use it to automate tasks on the web while making this project. I have also created a website for the documentation of this project.",
+      "As my school has a zaobao schools website to practice Chinese exercises, I thought that it would be a interesting to make a bot that would do the exercises for you, and get to the top of the leaderboard. I learned about how to use Selenium and how to use it to automate tasks on the web while making this project. I have also created a website for the documentation of this project.",
     techStack: [Python, Selenium],
     github: "https://github.com/p55d2k/synth2-zb-bot",
     live: "https://synthbot.vercel.app",
     screenshot: "/imgs/screenshots/synthbot.jpeg",
   },
+  {
+    name: "Project TaskCraft",
+    description: "The free, open-source, project management tool for everyone.",
+    detailedDescription:
+      "I am actually doing this for my school's graded project work. I wanted to make a project management tool that would be free and open-source for everyone, especially secondary and junior college students in Singapore, to use. I am still developing this project, with my 3 other friends! I will be doing the frontend made with TailwindCSS and NextJS using TypeScript, while the others work on the design and backend. My key learning points from this project is focusing on learning the Gemini API, as we are integrating Artificial Intelligence into our project. We are also planning to use ExpressJS for the backend, and Firebase for the database.",
+    techStack: [NextJS, Firebase, Clerk, ExpressJS],
+    github: "https://github.com/p55d2k/project-taskcraft-frontend",
+    live: "https://taskcraft.vercel.app",
+    screenshot: "/imgs/screenshots/taskcraft.jpeg",
+  },
+  {
+    name: "Pokedex",
+    description:
+      "A simple Pokedex made with NextJS, MUI, TypeScript, Vanilla CSS, and Redux.",
+    detailedDescription:
+      "This is actually the second version of this- the first one was made without Redux. I actually made this as a part to learn to use Redux and MUI. This was the first project I made with them, and I learned a lot about how to use them both and how to use it with NextJS.",
+    techStack: [NextJS, MUI, Redux, CSS3],
+    github: "https://github.com/p55d2k/redux-mui-pokedex-app",
+    live: "https://zkpokedex2.vercel.app",
+    screenshot: "/imgs/screenshots/pokedex.jpeg",
+  },
+  {
+    name: "ZK Three Portfolio",
+    description:
+      "A ThreeJS portfolio website I learnt from a video tutorial on YouTube!",
+    detailedDescription:
+      "I actually watched a video tutorial on how to make a ThreeJS portfolio website (https://www.youtube.com/watch?v=0fYi8SGA20k by JavaScript Mastery), and I thought that it would be a good idea to make a project like that. I learned a lot about how to use ThreeJS and how to use it with React while making this project. I also learned how to use React-Three-Fiber and how to use it with ThreeJS.",
+    techStack: [NextJS, MUI, Redux, CSS3],
+    github: "https://github.com/p55d2k/zk-threejs-portfolio",
+    live: "https://zkthreeportfolio.vercel.app",
+    screenshot: "/imgs/screenshots/threeportfolio.jpeg",
+  },
+  {
+    name: "ZK Astro Blog",
+    description: "The default Astro blog - but with my own customizations!",
+    detailedDescription:
+      "Finally - a website that I made that is not made with NextJS! I made this project as a part of learning Astro in my CCA, and I learnt how to make a blog. I learned a lot about how to use Astro and how to use it with React while making this project. I also learned how to use MUI and how to use it with Astro.",
+    techStack: [Astro, TailwindCSS],
+    github: "https://github.com/p55d2k/ec3-astrojs-blog/",
+    live: "https://zkastroblog.vercel.app",
+    screenshot: "/imgs/screenshots/astroblog.jpeg",
+  },
+  {
+    name: "Cinewave",
+    description: "My first React App! I learnt how to make it from a video tutorial",
+    detailedDescription:
+      "This was my first ReactJS website, when I was introduced to React in 2023 by my friend. I watched a video tutorial on learning ReactJS (https://www.youtube.com/watch?v=b9eMGE7QtTk by JavaScript Mastery), and learnt how to create a movie website from this. What I learnt was how to use ReactJS, and from then on, I started to learn more about Javascript frameworks.",
+    techStack: [ReactJS, CSS3],
+    github: "https://github.com/p55d2k/cinewave",
+    live: "https://zkcinewave.vercel.app",
+    screenshot: "/imgs/screenshots/cinewave.jpeg",
+  },
 ];
 
 export default projects;
+
+export const getProject = (name: string): Project | undefined => {
+  return projects.find(
+    (project) =>
+      project.name.toLowerCase().replaceAll(" ", "_") ===
+      name.toLowerCase().replaceAll(" ", "_")
+  );
+};

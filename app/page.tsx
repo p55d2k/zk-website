@@ -7,13 +7,13 @@ import Contact from "@/components/sections/Contact";
 import Skills from "@/components/subsections/Skills";
 import Hobbies from "@/components/subsections/Hobbies";
 
-import Modal from "@/components/Modal";
+import SocialIcons from "@/components/modules/SocialIcons";
 
 const Home = () => {
   return (
-    <div>
+    <div> 
       <Hero />
-      <Modal />
+      <SocialIcons />
       <div className="flex flex-col mb-12" id="mainContent">
         <About />
         <Skills />
