@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <div className="flex flex-col">
-      <header className="w-full bg-slate-900 text-white py-6 px-8 flex flex-row justify-between h-[10vh] items-center">
+      <header className="w-full bg-slate-900 text-white py-6 px-8 flex flex-row justify-between h-[10vh] items-center" id="header">
         <Link href="/">
           <Image
             unoptimized
