@@ -28,7 +28,7 @@ const About = () => {
         <div className="flex flex-col space-y-1">
           <Image
             unoptimized
-            src="/imgs/zk1.jpeg"
+            src="/imgs/zk2.jpeg"
             alt=""
             width={400}
             height={400}
@@ -51,7 +51,8 @@ const About = () => {
               >
                 Hwa Chong Institution
               </Link>
-              , and am {new Date().getFullYear() - 2010} years old this year. 🎉
+              , and I am {new Date().getFullYear() - 2010} years old this year!
+              🎉
             </p>{" "}
             <p>
               I have self-taught programming since I was 5. I am passionate
@@ -95,6 +96,11 @@ const About = () => {
                 TailwindCSS
               </Link>{" "}
               in my projects, including this website! 🚀
+            </p>
+            <p>
+              I am also fluent in <span className="text-blue-500">English</span>
+              , <span className="text-blue-500">Chinese</span>, and am learning{" "}
+              <span className="text-blue-500">Indonesian</span>!
             </p>
             <Link className="button" href="/story">
               Read more about my story 📖

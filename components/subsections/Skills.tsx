@@ -2,7 +2,7 @@
 
 import { backEnd, frontEnd, utilities, other } from "@/constants/skills";
 import SubsectionHeader from "../modules/SubsectionHeader";
-import SkillsCard from "./SkillsCard";
+import SkillsCard from "../modules/SkillsCard";
 
 const Skills = () => {
   return (

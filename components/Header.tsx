@@ -55,6 +55,9 @@ const Header = () => {
           <Link href={"/#about"} className="header-link">
             About
           </Link>
+          <Link href={"/#experience"} className="header-link">
+            Experience
+          </Link>
           <Link href={"/#projects"} className="header-link">
             Projects
           </Link>
@@ -70,6 +73,12 @@ const Header = () => {
             className="footer-link !border-0 !hover:p-0 !text-center"
           >
             About
+          </Link>
+          <Link
+            href={"/#experience"}
+            className="footer-link !border-0 !hover:p-0 !text-center"
+          >
+            Experience
           </Link>
           <Link
             href={"/#projects"}

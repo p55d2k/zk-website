@@ -28,7 +28,7 @@ const Hobbies = () => {
       >
         <div className="flex flex-col space-y-1 max-w-[500px]">
           <h3 className="text-2xl md:text-3xl text-center md:text-left">
-            What do I do during my free time? (other than coding of course 😹)
+            What do I do during my free time?
           </h3>
           <div className="flex flex-col space-y-3 text-sm md:text-base text-left md:text-left font-light pt-2">
             <p>
@@ -66,15 +66,15 @@ const Hobbies = () => {
               Not only that, I also can play the{" "}
               <span className="text-blue-500">violin</span>. I have achieved
               grade 8, and have been playing for{" "}
-              {new Date().getFullYear() - 2014} years, and definitely enjoy
-              playing classical pieces until today.
+              {new Date().getFullYear() - 2014} years, and definitely continue
+              to enjoy playing classical pieces.
             </p>
           </div>
         </div>
         <div className="flex flex-col space-y-1">
           <Image
             unoptimized
-            src="/imgs/zk2.jpeg"
+            src="/imgs/zk1.jpeg"
             alt=""
             width={400}
             height={500}

@@ -33,47 +33,73 @@ import {
 import { GoCopilot } from "react-icons/go";
 import { RiOpenaiFill } from "react-icons/ri";
 
+export const HTML5 = { name: "HTML5", icon: FaHtml5 };
+export const CSS3 = { name: "CSS3", icon: FaCss3 };
+export const JavaScript = { name: "JavaScript", icon: SiJavascript };
+export const TypeScript = { name: "TypeScript", icon: SiTypescript };
+export const ReactJS = { name: "ReactJS", icon: FaReact };
+export const NextJS = { name: "NextJS", icon: SiNextdotjs };
+export const TailwindCSS = { name: "Tailwind CSS", icon: SiTailwindcss };
+export const ReactNative = { name: "React Native", icon: TbBrandReactNative };
+export const Expo = { name: "Expo", icon: SiExpo };
+export const Redux = { name: "Redux", icon: SiRedux };
+
 const frontEnd = [
-  { name: "HTML5", icon: FaHtml5 },
-  { name: "CSS3", icon: FaCss3 },
-  { name: "JavaScript", icon: SiJavascript },
-  { name: "TypeScript", icon: SiTypescript },
-  { name: "ReactJS", icon: FaReact },
-  { name: "NextJS", icon: SiNextdotjs },
-  { name: "Tailwind CSS", icon: SiTailwindcss },
-  { name: "React Native", icon: TbBrandReactNative },
-  { name: "Expo", icon: SiExpo },
-  { name: "Redux", icon: SiRedux },
+  HTML5,
+  CSS3,
+  JavaScript,
+  TypeScript,
+  ReactJS,
+  NextJS,
+  TailwindCSS,
+  ReactNative,
+  Expo,
+  Redux,
 ];
 
-const backEnd = [
-  { name: "ExpressJS", icon: SiExpress },
-  { name: "Firebase", icon: SiFirebase },
-  { name: "MongoDB", icon: SiMongodb },
-];
+export const ExpressJS = { name: "ExpressJS", icon: SiExpress };
+export const Firebase = { name: "Firebase", icon: SiFirebase };
+export const MongoDB = { name: "MongoDB", icon: SiMongodb };
+
+const backEnd = [ExpressJS, Firebase, MongoDB];
+
+export const VSCode = { name: "VSCode", icon: TbBrandVscode };
+export const macOS = { name: "macOS", icon: SiMacos };
+export const NodeJS = { name: "NodeJS", icon: FaNodeJs };
+export const Yarn = { name: "Yarn", icon: SiYarn };
+export const Bun = { name: "Bun", icon: SiBun };
+export const Deno = { name: "Deno", icon: SiDeno };
+export const Prettier = { name: "Prettier", icon: SiPrettier };
+export const Git = { name: "Git", icon: FaGitAlt };
+export const Github = { name: "Github", icon: FaGithub };
+export const Vercel = { name: "Vercel", icon: SiVercel };
+export const StackOverflow = { name: "Stack Overflow", icon: SiStackoverflow };
+export const ChatGPT = { name: "ChatGPT", icon: RiOpenaiFill };
+export const Copilot = { name: "Copilot", icon: GoCopilot };
+export const Cloudflare = { name: "Cloudflare", icon: FaCloudflare };
 
 const utilities = [
-  { name: "VSCode", icon: TbBrandVscode },
-  { name: "macOS", icon: SiMacos },
-  { name: "NodeJS", icon: FaNodeJs },
-  { name: "Yarn", icon: SiYarn },
-  { name: "Bun", icon: SiBun },
-  { name: "Deno", icon: SiDeno },
-  { name: "Prettier", icon: SiPrettier },
-  { name: "Git", icon: FaGitAlt },
-  { name: "Github", icon: FaGithub },
-  { name: "Vercel", icon: SiVercel },
-  { name: "Stack Overflow", icon: SiStackoverflow },
-  { name: "ChatGPT", icon: RiOpenaiFill },
-  { name: "Copilot", icon: GoCopilot },
-  { name: "Cloudflare", icon: FaCloudflare },
+  VSCode,
+  macOS,
+  NodeJS,
+  Yarn,
+  Bun,
+  Deno,
+  Prettier,
+  Git,
+  Github,
+  Vercel,
+  StackOverflow,
+  ChatGPT,
+  Copilot,
+  Cloudflare,
 ];
 
-const other = [
-  { name: "Python", icon: SiPython },
-  { name: "C++", icon: SiCplusplus },
-  { name: "Unity", icon: SiUnity },
-  { name: "Selenium", icon: SiSelenium },
-];
+export const Python = { name: "Python", icon: SiPython };
+export const CPlusPlus = { name: "C++", icon: SiCplusplus };
+export const Unity = { name: "Unity", icon: SiUnity };
+export const Selenium = { name: "Selenium", icon: SiSelenium };
+
+const other = [Python, CPlusPlus, Unity, Selenium];
 
 export { frontEnd, backEnd, utilities, other };

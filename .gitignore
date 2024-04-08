@@ -35,3 +35,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# any python files should be ignored
+*.pyc
+*.pyo
+*.pyd
+*.py
