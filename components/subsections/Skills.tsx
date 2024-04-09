@@ -1,8 +1,8 @@
 "use client";
 
 import { backEnd, frontEnd, utilities, other } from "@/constants/skills";
-import SubsectionHeader from "../modules/SubsectionHeader";
-import SkillsCard from "../modules/SkillsCard";
+import SubsectionHeader from "../SubsectionHeader";
+import SkillsCard from "../cards/SkillsCard";
 
 const Skills = () => {
   return (

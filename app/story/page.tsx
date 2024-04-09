@@ -1,4 +1,4 @@
-import PageHeader from "@/components/modules/PageHeader";
+import PageHeader from "@/components/PageHeader";
 import Hobbies from "@/components/subsections/Hobbies";
 import Story from "@/components/subsections/Story";
 

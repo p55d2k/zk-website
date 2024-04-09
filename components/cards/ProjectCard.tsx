@@ -10,7 +10,7 @@ const ProjectCard = ({ proj }: ProjectCardProps) => {
   return (
     <Link
       href={`/project/${proj.name.toLowerCase().replaceAll(" ", "_")}`}
-      className="flex flex-col space-y-3 bg-slate-900 rounded-lg divide-y-2 divide-slate-700 p-12 border-2 border-transparent hover:border-slate-700 cursor-pointer transition-all duration-200 ease-in-out h-[500px] items-center justify-center max-w-[100%]"
+      className="flex flex-col space-y-3 card divide-y-2 divide-slate-700 p-12 h-[500px] items-center justify-center max-w-[100%]"
     >
       <div className="flex flex-col space-y-2">
         <Image

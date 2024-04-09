@@ -1,8 +1,8 @@
 "use client";
 
-import SectionHeader from "../modules/SectionHeader";
+import SectionHeader from "../SectionHeader";
 import projects from "@/constants/projects";
-import ProjectCard from "../modules/ProjectCard";
+import ProjectCard from "../cards/ProjectCard";
 import Link from "next/link";
 
 const Projects = () => {

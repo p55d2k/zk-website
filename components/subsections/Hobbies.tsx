@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import SubsectionHeader from "../modules/SubsectionHeader";
+import SubsectionHeader from "../SubsectionHeader";
 
 import { useMedia } from "react-use";
 

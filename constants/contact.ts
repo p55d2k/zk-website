@@ -3,7 +3,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-interface ContactMethod {
+export interface ContactMethod {
   name: string;
   description: string;
   icon: IconType;

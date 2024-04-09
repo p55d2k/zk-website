@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { useMedia } from "react-use";
 
-import SectionHeader from "../modules/SectionHeader";
+import SectionHeader from "../SectionHeader";
 
 const About = () => {
   const flexSection = useMedia("(max-width: 900px)", false);

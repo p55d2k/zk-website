@@ -7,7 +7,7 @@ import Contact from "@/components/sections/Contact";
 import Skills from "@/components/subsections/Skills";
 import Hobbies from "@/components/subsections/Hobbies";
 
-import BackToTop from "@/components/modules/BackToTop";
+import BackToTop from "@/components/BackToTop";
 
 const Home = () => {
   return (

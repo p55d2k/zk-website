@@ -1,7 +1,7 @@
 "use client";
 
-import PageHeader from "@/components/modules/PageHeader";
-import ProjectCard from "@/components/modules/ProjectCard";
+import PageHeader from "@/components/PageHeader";
+import ProjectCard from "@/components/cards/ProjectCard";
 import projects, { Project } from "@/constants/projects";
 import { Skill, practicalSkills } from "@/constants/skills";
 

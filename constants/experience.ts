@@ -1,4 +1,4 @@
-const experience = [
+const experiences = [
   {
     start: "Nov 2023",
     end: "Dec 2023",
@@ -13,4 +13,16 @@ const experience = [
   },
 ];
 
-export default experience;
+export default experiences;
+
+export interface Experience {
+  start: string;
+  end: string;
+  time: string;
+  companyName: string;
+  position: string;
+  location: string;
+  logo: string;
+  link: string;
+  description: string;
+}

@@ -15,3 +15,9 @@ v0.1.2 - 9/4/2024
 - added animation for back button and backtotop
 - update to all the cards where animation is changed
 - update to work experiences to make each card clickable, and not just the name of the company
+
+v0.1.2a - 9/4/2024
+- added "source code" and version number link in footer
+- forgot to change the card animation for contact
+- forgot to add experience to the footer
+- added links to each skillset

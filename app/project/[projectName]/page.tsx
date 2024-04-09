@@ -1,6 +1,6 @@
 "use client";
 
-import PageHeader from "@/components/modules/PageHeader";
+import PageHeader from "@/components/PageHeader";
 import { Project, getProject } from "@/constants/projects";
 
 import { useEffect, useState } from "react";

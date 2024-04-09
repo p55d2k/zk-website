@@ -19,3 +19,7 @@ body {
 .button {
   @apply cursor-pointer font-medium text-lg text-center w-full md:text-xl bg-slate-600 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition-all ease-in-out;
 }
+
+.card {
+  @apply bg-slate-900 border-2 border-transparent hover:border-slate-700 cursor-pointer transition-all duration-200 ease-in-out rounded-lg;
+}
