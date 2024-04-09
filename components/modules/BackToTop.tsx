@@ -18,7 +18,7 @@ const BackToTop = () => {
   return (
     <div
       id="backToTop"
-      className="fixed bottom-0 right-0 hidden md:flex flex-row items-end justify-center p-5 space-x-2 z-50 opacity-0 translate-x-60"
+      className="fixed bottom-0 right-0 flex items-end justify-center p-5 space-x-2 z-50 opacity-0 translate-x-60"
     >
       <Link
         className={`items-center justify-center p-3`}

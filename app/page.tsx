@@ -17,7 +17,6 @@ const Home = () => {
       <div className="flex flex-col mb-12" id="mainContent">
         <About />
         <Skills />
-        <Hobbies />
         <Experience />
         <Projects />
         <Contact />

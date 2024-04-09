@@ -6,6 +6,7 @@ import { useRecoilValue } from "recoil";
 import { TypeAnimation } from "react-type-animation";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 const Hero = () => {
   useGSAP(() => {
@@ -34,7 +35,15 @@ const Hero = () => {
           autoPlay
           loop
           muted
-          className="object-cover w-full h-full pointer-events-none opacity-50"
+          className="object-cover w-full h-full pointer-events-none opacity-50 hidden md:flex"
+        />
+        <Image
+          src={"/hero-mobile.gif"}
+          alt=""
+          unoptimized
+          width={100}
+          height={100}
+          className="object-cover w-full h-full pointer-events-none opacity-50 md:hidden"
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 h-full w-full z-20 bg-gradient-to-b from-slate-900 via-black/0 to-black" />
       </div>

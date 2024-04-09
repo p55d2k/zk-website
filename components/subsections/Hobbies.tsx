@@ -12,22 +12,22 @@ const Hobbies = () => {
 
   return (
     <div
-      className="flex flex-col text-white px-8 sm:px-16 md:px-20 space-y-6 mt-12"
+      className="flex flex-col text-white px-8 sm:px-16 md:px-20 space-y-3"
       id="hobbies"
     >
       <SubsectionHeader
         typeSequence={["my hobbies", 4000, "我的爱好", 4000]}
-        subtitle="hobbies i enjoy doing in my free time"
+        subtitle=""
       />
       <div
         className={`flex ${
           flexSection
             ? "flex-col space-y-4"
             : "flex-row space-x-6 lg:space-x-14 xl:space-x-20"
-        } items-center justify-center py-3`}
+        } items-center justify-center`}
       >
         <div className="flex flex-col space-y-1 max-w-[500px]">
-          <h3 className="text-2xl md:text-3xl text-center md:text-left">
+          <h3 className="text-xl md:text-2xl text-center md:text-left">
             What do I do during my free time?
           </h3>
           <div className="flex flex-col space-y-3 text-sm md:text-base text-left md:text-left font-light pt-2">
