@@ -14,7 +14,7 @@ const StoryPage = () => {
         <IoMdArrowRoundBack />
         <p>Back to About</p>
       </Link>
-      <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10 xl:space-x-16 pt-5">
+      <div className="flex flex-col space-y-8 xl:space-x-16 pt-5">
         <Story />
         <Hobbies />
       </div>

@@ -1,32 +1,70 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 
 import SubsectionHeader from "../modules/SubsectionHeader";
 
 import { useMedia } from "react-use";
 
-const Hobbies = () => {
+const Story = () => {
   const flexSection = useMedia("(max-width: 900px)", false);
 
   return (
     <div
       className="flex flex-col text-white px-8 sm:px-16 md:px-20 space-y-3"
-      id="hobbies"
+      id="story"
     >
       <SubsectionHeader
         typeSequence={["the story of my life", 4000, "我的故事", 4000]}
         subtitle=""
+        className="!pb-2"
       />
       <div
         className={`flex ${
           flexSection
             ? "flex-col space-y-4"
             : "flex-row space-x-6 lg:space-x-14 xl:space-x-20"
-        } items-center justify-center`}
+        } items-center justify-center h-full`}
       >
-        <div className="flex flex-col space-y-1">
+        <div
+          className={`${
+            flexSection ? "hidden" : "flex"
+          } flex-col space-y-40`}
+        >
+          <div className="flex flex-col space-y-1">
+            <Image
+              unoptimized
+              src="/imgs/zk3.jpeg"
+              alt=""
+              width={400}
+              height={500}
+            />
+            <div className="text-center italic">Me in Dubai, UAE, 2023</div>
+          </div>
+          <div className="flex flex-col space-y-1">
+            <Image
+              unoptimized
+              src="/imgs/zk4.jpeg"
+              alt=""
+              width={400}
+              height={500}
+            />
+            <div className="text-center italic">Me paddling at Kallang Water Sports Centre for a Competition, Jan 2024</div>
+          </div>
+          <div className="flex flex-col space-y-1">
+            <Image
+              unoptimized
+              src="/imgs/zk5.jpeg"
+              alt=""
+              width={400}
+              height={500}
+            />
+            <div className="text-center italic">Me at Marina Bay Sands, Singapore</div>
+          </div>
+        </div>
+        <div
+          className={`flex-col space-y-1 ${flexSection ? "flex" : "hidden"}`}
+        >
           <Image
             unoptimized
             src="/imgs/zk3.jpeg"
@@ -36,7 +74,7 @@ const Hobbies = () => {
           />
           <div className="text-center italic">Me in Dubai, UAE, 2023</div>
         </div>
-        <div className="flex flex-col space-y-1 max-w-[500px]">
+        <div className="flex flex-col space-y-1 max-w-[400px] lg:max-w-[500px]">
           <h3 className="text-xl md:text-2xl text-center md:text-left">
             Who am I?
           </h3>
@@ -120,4 +158,4 @@ const Hobbies = () => {
   );
 };
 
-export default Hobbies;
+export default Story;
