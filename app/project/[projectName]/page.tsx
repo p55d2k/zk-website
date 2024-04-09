@@ -1,11 +1,14 @@
 "use client";
 
+import PageHeader from "@/components/modules/PageHeader";
 import { Project, getProject } from "@/constants/projects";
+
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 import { TfiNewWindow } from "react-icons/tfi";
-import { IoMdArrowRoundBack } from "react-icons/io";
+import { redirect } from "next/navigation";
 
 type ProjectPageProps = {
   params: {
@@ -17,18 +20,16 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
   const [project, setProject] = useState<Project | undefined>(undefined);
 
   useEffect(() => {
-    setProject(getProject(projectName));
+    const currentProject = getProject(projectName);
+    if (!currentProject) {
+      redirect("/project");
+    }
+    setProject(currentProject);
   }, [projectName]);
 
   return (
     <div className="p-4 sm:p-6 md:p-10 lg:p-14 flex flex-col divide-y-2 divide-slate-700">
-      <Link
-        href="/#projects"
-        className="flex flex-row space-x-2 pb-5 text-amber-500 items-center md:text-xl"
-      >
-        <IoMdArrowRoundBack />
-        <p>Back to Projects</p>
-      </Link>
+      <PageHeader text="Back to Projects Page" redirectUrl="/project" />
       <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10 xl:space-x-16 pt-5">
         <div className="flex flex-col items-center justify-center space-y-2 lg:max-w-[80%]">
           {project?.screenshot && (
@@ -71,7 +72,9 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
                 target="_blank"
                 className="flex flex-row items-end justify-center space-y-0 space-x-2"
               >
-                <p className="text-center">Github</p>
+                <p className="text-center border-b-2 border-white pt-1 hover:pt-0 hover:pb-1 transition-all duration-300 ease-in-out">
+                  Github
+                </p>
                 <TfiNewWindow className="w-8 h-8" />
               </Link>
             )}
@@ -81,7 +84,9 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
                 target="_blank"
                 className="flex flex-row items-end justify-center space-y-0 space-x-2"
               >
-                <p className="text-center">Live Website</p>
+                <p className="text-center border-b-2 border-white pt-1 hover:pt-0 hover:pb-1 transition-all duration-300 ease-in-out">
+                  Live Website
+                </p>
                 <TfiNewWindow className="w-8 h-8" />
               </Link>
             )}

@@ -41,3 +41,7 @@ next-env.d.ts
 *.pyo
 *.pyd
 *.py
+
+# any files that are a check list should be ignored
+checklist.*
+

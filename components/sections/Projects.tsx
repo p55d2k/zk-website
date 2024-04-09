@@ -3,6 +3,7 @@
 import SectionHeader from "../modules/SectionHeader";
 import projects from "@/constants/projects";
 import ProjectCard from "../modules/ProjectCard";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -14,9 +15,14 @@ const Projects = () => {
           what have i <span className="text-green-500">built</span>?
         </SectionHeader>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
-          {projects.map((proj, index) => (
+          {projects.slice(0, 3).map((proj, index) => (
             <ProjectCard key={index} proj={proj} />
           ))}
+        </div>
+        <div className="flex flex-row w-full justify-end items-center">
+          <Link href="/project" className="flex flex-row space-x-4">
+            <button className="button">View All</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -3,11 +3,13 @@ import {
   Astro,
   CSS3,
   Clerk,
+  Docusaurus,
   ExpressJS,
   Firebase,
   HTML5,
   JavaScript,
   MUI,
+  MongoDB,
   NextJS,
   Python,
   ReactJS,
@@ -19,15 +21,15 @@ import {
 
 export interface Project {
   name: string;
+  screenshot: string;
   description: string;
   detailedDescription: string;
   techStack: {
     name: string;
     icon: IconType;
   }[];
-  github: string;
-  live: string;
-  screenshot: string;
+  github?: string;
+  live?: string;
 }
 
 const projects: Project[] = [
@@ -39,15 +41,14 @@ const projects: Project[] = [
       "I originally made this project as my own website, and it is open-source so that others can use it as a template for their own websites (even though it might not be the best). While it is a simple project, I learned a lot about not only myself, but also about web development in general. I learned how to use Cloudflare pages and is-a.dev while making this project.",
     techStack: [NextJS, TypeScript, TailwindCSS],
     github: "https://github.com/p55d2k/zk-website",
-    live: "https://zk.is-a.dev",
     screenshot: "/imgs/screenshots/zkwebsite.jpeg",
   },
   {
     name: "ZKFlix-Next",
     description:
-      "A Netflix clone made with NextJS, TailwindCSS, and TypeScript. It fully has authentication and a database with firebase and firestore.",
+      "A Netflix clone made with NextJS, TailwindCSS, and TypeScript. It has authentication fully implemented and a database with firebase and firestore.",
     detailedDescription:
-      "I wanted to make this project when I was loved to binge-watch TV shows and movies. I wanted to make a project that would be useful for me, and I thought that a Netflix clone would be a fun. I learned a lot about how to use Firebase and Firestore while making this project.",
+      "I wanted to make this project when I was loved to binge-watch TV shows and movies. I wanted to make a project that would be useful for me, and I thought that a Netflix clone would be a fun. It uses TMDB's API for its movie list. I learned a lot about how to use Firebase and Firestore while making this project.",
     techStack: [NextJS, TypeScript, TailwindCSS, Firebase],
     github: "https://github.com/p55d2k/zkflix-next",
     live: "https://zkflix-next.vercel.app",
@@ -59,7 +60,7 @@ const projects: Project[] = [
       "Inspired by JSF, PyF is a Python obfuscator that converts Python code into unreadable code.",
     detailedDescription:
       "I was inspired by JSF, a JavaScript obfuscator that converts JavaScript code into unreadable code. I wanted to make a similar project, but for Python. For this project, it was rather simple, hence I used HTML and Javascript while using the Tailwind CSS Play CDN. I learned about Javascript and its string functions while developing this project.",
-    techStack: [HTML5, JavaScript, TailwindCSS],
+    techStack: [HTML5, JavaScript, TailwindCSS, Python],
     github: "https://github.com/p55d2k/pyf-converter",
     live: "https://pyf-converter.vercel.app",
     screenshot: "/imgs/screenshots/pyfconverter.jpeg",
@@ -69,8 +70,8 @@ const projects: Project[] = [
     description:
       "My school has a Zaobao schools website to practice Chinese exercises, but I created a bot to do it for you.",
     detailedDescription:
-      "As my school has a zaobao schools website to practice Chinese exercises, I thought that it would be a interesting to make a bot that would do the exercises for you, and get to the top of the leaderboard. I learned about how to use Selenium and how to use it to automate tasks on the web while making this project. I have also created a website for the documentation of this project.",
-    techStack: [Python, Selenium],
+      "As my school has a zaobao schools website to practice Chinese exercises, I thought that it would be a interesting to make a bot that would do the exercises for you, and get to the top of the leaderboard. I learned about how to use Selenium and how to use it to automate tasks on the web while making this project. I have also created a website for the documentation of this project with Docusaurus.",
+    techStack: [Python, Selenium, Docusaurus],
     github: "https://github.com/p55d2k/synth2-zb-bot",
     live: "https://synthbot.vercel.app",
     screenshot: "/imgs/screenshots/synthbot.jpeg",
@@ -119,13 +120,45 @@ const projects: Project[] = [
   },
   {
     name: "Cinewave",
-    description: "My first React App! I learnt how to make it from a video tutorial",
+    description:
+      "My first React App! I learnt how to make it from a video tutorial",
     detailedDescription:
-      "This was my first ReactJS website, when I was introduced to React in 2023 by my friend. I watched a video tutorial on learning ReactJS (https://www.youtube.com/watch?v=b9eMGE7QtTk by JavaScript Mastery), and learnt how to create a movie website from this. What I learnt was how to use ReactJS, and from then on, I started to learn more about Javascript frameworks.",
-    techStack: [ReactJS, CSS3],
+      "This was my first ReactJS website, when I was introduced to React in 2023 by my friend. I watched a video tutorial on learning ReactJS (https://www.youtube.com/watch?v=b9eMGE7QtTk by JavaScript Mastery), and learnt how to create a movie website from this. I also had linked TMDB to it. I found this website rather interesting to create as it was my first time using an API, and I learned a lot about how to use APIs while making this project. What I learnt was how to use ReactJS, and from then on, I started to learn more about Javascript frameworks.",
+    techStack: [ReactJS, CSS3, JavaScript],
     github: "https://github.com/p55d2k/cinewave",
     live: "https://zkcinewave.vercel.app",
     screenshot: "/imgs/screenshots/cinewave.jpeg",
+  },
+  {
+    name: "ZKLingo",
+    description: "A duolingo clone - also from a video tutorial!",
+    detailedDescription:
+      "This was a NextJS website made with TypeScript as well. I watched a video tutorial on how to make a Duolingo clone (https://www.youtube.com/watch?v=dP75Khfy4s4 by Code with Antonio), and it would be fun to make this, especially due to the memes around the time. This was my first project with Clerk and MongoDB, and I learned a lot about how to use them while making this project.",
+    techStack: [NextJS, MongoDB, Clerk, TailwindCSS],
+    live: "https://zklingo.vercel.app",
+    screenshot: "/imgs/screenshots/zklingo.jpeg",
+  },
+  {
+    name: "ZK-GPT3 Website",
+    description:
+      "A website for a GPT-3 website demo that I made for fun! I learnt it from a video tutorial.",
+    detailedDescription:
+      "This was my second ReactJS website, after CineWave. I watched a video tutorial on learning ReactJS (but can't find the link anymore), and learnt how to create this GPT-3 website demo clone from this.",
+    techStack: [ReactJS, CSS3, JavaScript],
+    github: "https://github.com/p55d2k/gpt-3-website-clone",
+    live: "https://zkgpt3.vercel.app/",
+    screenshot: "/imgs/screenshots/gpt3.jpeg",
+  },
+  {
+    name: "ZKGericht",
+    description:
+      "A website for a restaurant that I made for fun! I learnt it from the same video tutorial as the ZK-GPT3 Website.",
+    detailedDescription:
+      "This was my third ReactJS website, after GPT3 Website. I watched the same video tutorial on learning ReactJS, and learnt how to create a restaurant website from this. What I learnt was how to use ReactJS, and from then on, I began to learn about NextJS and began transitioning to NextJS as I found it more powerful.",
+    techStack: [ReactJS, CSS3, JavaScript],
+    github: "https://github.com/p55d2k/gericht-restaurant",
+    live: "https://zkgericht.vercel.app/",
+    screenshot: "/imgs/screenshots/zkgericht.jpeg",
   },
 ];
 

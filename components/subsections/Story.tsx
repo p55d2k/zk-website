@@ -24,14 +24,14 @@ const Story = () => {
           flexSection
             ? "flex-col space-y-4"
             : "flex-row space-x-6 lg:space-x-14 xl:space-x-20"
-        } items-center justify-center h-full`}
+        } items-center justify-center h-full pt-5`}
       >
         <div
           className={`${
             flexSection ? "hidden" : "flex"
-          } flex-col space-y-40`}
+          } flex-col space-y-20 items-center justify-center`}
         >
-          <div className="flex flex-col space-y-1">
+          <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
               unoptimized
               src="/imgs/zk3.jpeg"
@@ -41,7 +41,7 @@ const Story = () => {
             />
             <div className="text-center italic">Me in Dubai, UAE, 2023</div>
           </div>
-          <div className="flex flex-col space-y-1">
+          <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
               unoptimized
               src="/imgs/zk4.jpeg"
@@ -51,7 +51,7 @@ const Story = () => {
             />
             <div className="text-center italic">Me paddling at Kallang Water Sports Centre for a Competition, Jan 2024</div>
           </div>
-          <div className="flex flex-col space-y-1">
+          <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
               unoptimized
               src="/imgs/zk5.jpeg"
@@ -74,7 +74,9 @@ const Story = () => {
           />
           <div className="text-center italic">Me in Dubai, UAE, 2023</div>
         </div>
-        <div className="flex flex-col space-y-1 max-w-[400px] lg:max-w-[500px]">
+        <div className={`flex flex-col space-y-1 ${
+          flexSection ? "max-w-[500px]" : "max-w-[400px] lg:max-w-[500px]"
+        }`}>
           <h3 className="text-xl md:text-2xl text-center md:text-left">
             Who am I?
           </h3>

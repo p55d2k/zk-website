@@ -18,9 +18,11 @@ const Experience = () => {
         <div className="flex flex-row items-center justify-center space-x-6">
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center"> */}
           {experience.map((exp, index) => (
-            <div
+            <Link
               key={index}
-              className="flex flex-col space-y-3 bg-slate-900 rounded-lg border-slate-700 border-4 border-t-0 border-l-0 divide-y-2 divide-slate-700 p-12 hover:border-8 hover:border-t-0 hover:border-l-0 transition-all duration-200 ease-in-out"
+              className="flex flex-col space-y-3 bg-slate-900 rounded-lg divide-y-2 divide-slate-700 p-12 border-2 border-transparent hover:border-slate-700 transition-all duration-200 ease-in-out"
+              href={exp.link}
+              target="_blank"
             >
               <div className="flex flex-col space-y-2 items-center">
                 <Image
@@ -33,13 +35,9 @@ const Experience = () => {
                   className="bg-white items-center"
                   unoptimized
                 />
-                <Link
-                  href={exp.link}
-                  target="_blank"
-                  className="text-center font-extrabold text-4xl pt-3 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-opacity-0 pb-3 text-white bg-clip-text hover:underline transition-all duration-300 ease-in-out"
-                >
+                <h1 className="text-center font-extrabold text-4xl pt-3 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-opacity-0 pb-3 text-white bg-clip-text hover:underline transition-all duration-300 ease-in-out">
                   {exp.companyName}
-                </Link>
+                </h1>
                 <p className="text-center text-sm text-amber-500">
                   {exp.start} - {exp.end} | {exp.time}
                 </p>
@@ -53,7 +51,7 @@ const Experience = () => {
                 </p>
               </div>
               <div className="pt-4 text-center text-sm">{exp.description}</div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

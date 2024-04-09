@@ -18,13 +18,14 @@ const Hobbies = () => {
       <SubsectionHeader
         typeSequence={["my hobbies", 4000, "我的爱好", 4000]}
         subtitle=""
+        className="!pb-2"
       />
       <div
         className={`flex ${
           flexSection
             ? "flex-col space-y-4"
             : "flex-row space-x-6 lg:space-x-14 xl:space-x-20"
-        } items-center justify-center`}
+        } items-center justify-center pt-5`}
       >
         <div className="flex flex-col space-y-1 max-w-[500px]">
           <h3 className="text-xl md:text-2xl text-center md:text-left">

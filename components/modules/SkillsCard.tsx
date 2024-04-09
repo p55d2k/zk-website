@@ -1,13 +1,10 @@
-import { IconType } from "react-icons/lib";
+import { Skill } from "@/constants/skills";
 import { useMedia } from "react-use";
 
 interface SkillsCardProps {
   title: string;
   description: string;
-  skills: {
-    name: string;
-    icon: IconType;
-  }[];
+  skills: Skill[];
 }
 
 // TODO: add link to the icons

@@ -32,9 +32,11 @@ import {
   SiYarn,
   SiMui,
   SiAstro,
+  SiDocusaurus,
 } from "react-icons/si";
 import { GoCopilot } from "react-icons/go";
 import { RiOpenaiFill } from "react-icons/ri";
+import { IconType } from "react-icons";
 
 export const HTML5 = { name: "HTML5", icon: FaHtml5 };
 export const CSS3 = { name: "CSS3", icon: FaCss3 };
@@ -48,6 +50,7 @@ export const Expo = { name: "Expo", icon: SiExpo };
 export const Redux = { name: "Redux", icon: SiRedux };
 export const MUI = { name: "Material-UI", icon: SiMui };
 export const Astro = { name: "Astro", icon: SiAstro };
+export const Docusaurus = { name: "Docusaurus", icon: SiDocusaurus };
 
 const frontEnd = [
   HTML5,
@@ -109,4 +112,29 @@ export const Selenium = { name: "Selenium", icon: SiSelenium };
 
 const other = [Python, CPlusPlus, Unity, Selenium];
 
-export { frontEnd, backEnd, utilities, other };
+const practicalSkills = [
+  HTML5,
+  CSS3,
+  JavaScript,
+  TypeScript,
+  ReactJS,
+  NextJS,
+  TailwindCSS,
+  Redux,
+  MUI,
+  Astro,
+  Docusaurus,
+  ExpressJS,
+  Firebase,
+  MongoDB,
+  Clerk,
+  Python,
+  Selenium,
+];
+
+export { frontEnd, backEnd, utilities, other, practicalSkills };
+
+export interface Skill {
+  name: string;
+  icon: IconType;
+}
