@@ -32,3 +32,4 @@ v0.1.3 - 10/4/2024
 - added description for "tools" skillset
 - add discord link to contact methods
 - fixed weird-looking header on mobile
+- edited logo to match colors
