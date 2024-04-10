@@ -17,16 +17,16 @@ const SkillsCard = ({ title, description, skills }: SkillsCardProps) => {
         <h3 className="text-2xl lg:text-3xl font-thin text-red-500 text-center lg:text-left">
           {title}
         </h3>
-        <p className="text-xs md:text-sm text-amber-500 text-center lg:text-left">
+        <p className="text-xs md:text-sm text-amber-300 text-center lg:text-left">
           {description}
         </p>
       </div>
       <div
-        className={`pl-4 grid ${
+        className={`pt-2 md:pt-0 md:pl-4 grid ${
           isSmallScreen
             ? "grid-cols-1"
             : "grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-        } lg:text-left font-light w-full`}
+        } font-light w-full`}
       >
         {skills.map((skill: Skill, index) => (
           <Link
@@ -35,8 +35,8 @@ const SkillsCard = ({ title, description, skills }: SkillsCardProps) => {
             target="_blank"
             key={index}
           >
-            <skill.icon className="h-6 w-6 sm:w-12 sm:h-12 text-amber-300" />
-            <span className="items-center flex text-amber-300 text-sm lg:text-base">
+            <skill.icon className="h-6 w-6 sm:w-12 sm:h-12 text-amber-500" />
+            <span className="items-center flex text-amber-500 text-sm lg:text-base">
               {skill.name}
             </span>
           </Link>

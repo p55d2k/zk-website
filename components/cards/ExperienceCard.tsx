@@ -22,7 +22,6 @@ const ExperienceCard = ({ exp }: ExperienceCardProps) => {
           // TODO: remove when got more jobs
           // className="bg-white w-full"
           className="bg-white items-center"
-          unoptimized
         />
         <h1 className="text-center font-extrabold text-4xl pt-3 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-opacity-0 pb-3 text-white bg-clip-text hover:underline transition-all duration-300 ease-in-out">
           {exp.companyName}

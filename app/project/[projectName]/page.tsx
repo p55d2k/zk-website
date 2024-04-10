@@ -35,11 +35,11 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
           {project?.screenshot && (
             <Image
               src={project.screenshot}
-              unoptimized
               alt=""
               width={0}
               height={0}
               className="w-full rounded-lg"
+              unoptimized
             />
           )}
           {project?.techStack && (

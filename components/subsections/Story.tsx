@@ -33,7 +33,6 @@ const Story = () => {
         >
           <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
-              unoptimized
               src="/imgs/zk3.jpeg"
               alt=""
               width={400}
@@ -43,7 +42,6 @@ const Story = () => {
           </div>
           <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
-              unoptimized
               src="/imgs/zk4.jpeg"
               alt=""
               width={400}
@@ -53,7 +51,6 @@ const Story = () => {
           </div>
           <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
-              unoptimized
               src="/imgs/zk5.jpeg"
               alt=""
               width={400}
@@ -66,7 +63,6 @@ const Story = () => {
           className={`flex-col space-y-1 ${flexSection ? "flex" : "hidden"}`}
         >
           <Image
-            unoptimized
             src="/imgs/zk3.jpeg"
             alt=""
             width={400}

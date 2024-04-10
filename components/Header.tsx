@@ -26,10 +26,12 @@ const Header = () => {
 
   return (
     <div className="flex flex-col">
-      <header className="w-full bg-slate-900 text-white py-6 px-8 flex flex-row justify-between h-[10vh] items-center" id="header">
+      <header
+        className="w-full bg-slate-900 text-white py-6 px-8 flex flex-row justify-between h-[10vh] items-center"
+        id="header"
+      >
         <Link href="/">
           <Image
-            unoptimized
             src="/favicon.ico"
             alt=""
             width={40}
@@ -37,7 +39,6 @@ const Header = () => {
             className="block sm:hidden"
           />
           <Image
-            unoptimized
             src="/favicon.ico"
             alt=""
             width={50}
@@ -67,31 +68,36 @@ const Header = () => {
         </div>
       </header>
       {menuOpen && (
-        <div className="w-full bg-slate-900 text-white pt-6 px-8 flex flex-row justify-between sm:hidden transition-all h-[10vh]">
-          <Link
-            href={"/#about"}
-            className="footer-link !border-0 !hover:p-0 !text-center"
-          >
-            About
-          </Link>
-          <Link
-            href={"/#experience"}
-            className="footer-link !border-0 !hover:p-0 !text-center"
-          >
-            Experience
-          </Link>
-          <Link
-            href={"/#projects"}
-            className="footer-link !border-0 !hover:p-0 !text-center"
-          >
-            Projects
-          </Link>
-          <Link
-            href={"/#contact"}
-            className="footer-link !border-0 !hover:p-0 !text-center"
-          >
-            Contact
-          </Link>
+        <div className="w-full bg-slate-900 text-white px-8 flex flex-col justify-between sm:hidden transition-all h-[10vh]">
+          <div className="flex flex-row justify-between">
+            {" "}
+            <Link
+              href={"/#about"}
+              className="footer-link !border-0 !hover:p-0 !text-center"
+            >
+              About
+            </Link>
+            <Link
+              href={"/#experience"}
+              className="footer-link !border-0 !hover:p-0 !text-center"
+            >
+              Experience
+            </Link>
+          </div>
+          <div className="flex flex-row justify-between">
+            <Link
+              href={"/#projects"}
+              className="footer-link !border-0 !hover:p-0 !text-center"
+            >
+              Projects
+            </Link>
+            <Link
+              href={"/#contact"}
+              className="footer-link !border-0 !hover:p-0 !text-center"
+            >
+              Contact
+            </Link>
+          </div>
         </div>
       )}
     </div>

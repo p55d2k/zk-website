@@ -13,7 +13,7 @@ const ContactMethodCard = ({ method }: ContactMethodCardProps) => {
       target="_blank"
       className="flex flex-col items-center justify-center space-y-2 p-5 min-h-[250px] md:min-h-[300px] lg:min-h-[350px] card w-full"
     >
-      <method.icon className="text-5xl" />
+      <method.icon className="w-12 h-12" />
       <div className="text-center">
         <p className={`text-lg md:text-xl lg:text-2xl font-semibold text-blue-500`}>
           {method.name}

@@ -23,7 +23,7 @@ const Hero = () => {
     <div
       className={`flex flex-col items-center justify-center ${
         headerMenuOpen ? "h-[80vh]" : "h-[90vh]"
-      }`}
+      } pb-20 md:pb-0`}
     >
       <div
         className={`absolute left-0 right-0 bottom-0 w-screen ${
@@ -38,9 +38,8 @@ const Hero = () => {
           className="object-cover w-full h-full pointer-events-none opacity-50 hidden md:flex"
         />
         <Image
-          src={"/hero-mobile.gif"}
+          src={"/hero.jpeg"}
           alt=""
-          unoptimized
           width={100}
           height={100}
           className="object-cover w-full h-full pointer-events-none opacity-50 md:hidden"

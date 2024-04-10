@@ -7,19 +7,23 @@ const Footer = async () => {
       id="footer"
       className="bg-slate-600 text-2xl flex flex-col w-full justify-center items-center p-8 space-y-2"
     >
-      <div className="flex flex-row items-center justify-center space-x-4 w-full">
-        <Link href="#about" className="footer-link">
-          About
-        </Link>
-        <Link href="#experience" className="footer-link">
-          Experience
-        </Link>
-        <Link href="#projects" className="footer-link">
-          Projects
-        </Link>
-        <Link href="#contact" className="footer-link">
-          Contact
-        </Link>
+      <div className="flex flex-col space-y-2 md:space-y-0 md:space-x-4 md:flex-row items-center justify-center w-full">
+        <div className="flex flex-row justify-center space-x-4">
+          <Link href="#about" className="footer-link">
+            About
+          </Link>
+          <Link href="#experience" className="footer-link">
+            Experience
+          </Link>
+        </div>
+        <div className="flex flex-row justify-center space-x-4">
+          <Link href="#projects" className="footer-link">
+            Projects
+          </Link>
+          <Link href="#contact" className="footer-link">
+            Contact
+          </Link>
+        </div>
       </div>
       <div className="flex flex-col space-y-1 text-center">
         <p>

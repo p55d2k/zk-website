@@ -10,7 +10,6 @@ const NotFoundPage = () => {
           alt="sad zhi kai"
           width={400}
           height={400}
-          unoptimized
         />
         <p className="italic text-lg">Me in Perth, Australia, 2014</p>
       </div>

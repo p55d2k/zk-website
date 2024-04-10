@@ -74,7 +74,6 @@ const Hobbies = () => {
         </div>
         <div className="flex flex-col space-y-1">
           <Image
-            unoptimized
             src="/imgs/zk1.jpeg"
             alt=""
             width={400}

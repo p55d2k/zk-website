@@ -19,7 +19,6 @@ const ProjectCard = ({ proj }: ProjectCardProps) => {
           width={400}
           height={400}
           className="bg-white w-full border-2 border-white rounded-lg"
-          unoptimized
         />
         <div className="text-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-opacity-0 pb-3 text-white bg-clip-text font-extrabold text-4xl pt-3">
           {proj.name}

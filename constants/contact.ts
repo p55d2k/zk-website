@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export interface ContactMethod {
@@ -40,9 +40,16 @@ const contactMethods: ContactMethod[] = [
     link: "https://github.com/p55d2k",
   },
   {
+    name: "Discord",
+    description:
+      "A social messaging platform, Discord. You can find me by clicking on this to go to my profile.",
+    icon: FaDiscord,
+    link: "https://discordapp.com/users/812219026473746453",
+  },
+  {
     name: "X",
     description:
-      "Lastly, another social profile, X. You can find me by clicking on this to go to my profile.",
+      "Another social profile, X. You can find me by clicking on this to go to my profile.",
     icon: FaXTwitter,
     link: "https://twitter.com/p55d2k",
   },
