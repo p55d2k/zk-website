@@ -6,6 +6,7 @@ import projects, { Project } from "@/constants/projects";
 import { Skill, practicalSkills } from "@/constants/skills";
 
 import { useState, useEffect } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const ProjectListing = () => {
   const [projectsToShow, setProjectsToShow] = useState<Project[]>(projects);
@@ -36,21 +37,25 @@ const ProjectListing = () => {
       <div className="flex flex-col space-y-8 py-5">
         <div className="flex flex-col">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text pb-1">
-            Projects
+            <TypeAnimation
+              sequence={["Projects", 3000, "作品展示", 3000]}
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
-          <p className="text-sm sm:text-base md:text-lg">
+          <p className="text-sm sm:text-base md:text-lg text-amber-500">
             Here are some of the projects I have worked on.
           </p>
           <div className="flex flex-col md:flex-row w-full space-y-2 md:space-y-0 md:space-x-4 mt-5">
             <input
               type="text"
               placeholder="Search"
-              className="button p-2 border-2 border-slate-700 hover:bg-slate-500/60 outline-none rounded-md !text-left w-full md:w-[80%]"
+              className="button p-2 border-2 !bg-slate-600 !hover:bg-slate-700 border-slate-700 outline-none !text-left w-full md:w-[80%]"
               onChange={(e) => setSearchTerm(e.target.value)}
               value={searchTerm}
             />
             <select
-              className="button p-2 border-2 border-slate-700 hover:bg-slate-500/60 outline-none rounded-md !text-left w-full md:w-[20%]"
+              className="button p-2 border-2 !bg-slate-600 !hover:bg-slate-700 border-slate-700 outline-none !text-left w-full md:w-[20%]"
               style={{ appearance: "none" }}
               onChange={(e) =>
                 setFilter(
@@ -70,7 +75,7 @@ const ProjectListing = () => {
         {projectsToShow.length ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
             {projectsToShow.map((proj, index) => (
-              <ProjectCard key={index} proj={proj} />
+              <ProjectCard key={index} proj={proj} whiteText />
             ))}
           </div>
         ) : (

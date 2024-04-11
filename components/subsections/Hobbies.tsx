@@ -28,44 +28,32 @@ const Hobbies = () => {
         } items-center justify-center pt-5`}
       >
         <div className="flex flex-col space-y-1 max-w-[500px]">
-          <h3 className="text-xl md:text-2xl text-center md:text-left">
+          <h3 className="text-xl md:text-2xl lg:text-3xl text-center md:text-left">
             What do I do during my free time?
           </h3>
           <div className="flex flex-col space-y-3 text-sm md:text-base text-left md:text-left font-light pt-2">
             <p>
               Ever since I was young, I always enjoyed{" "}
-              <span className="text-blue-500">mobile gaming</span> (which was
+              <span className="text-amber-500">mobile gaming</span> (which was
               also due to the encouragement from my peers). These include games
-              such as{" "}
-              <Link
-                className="text-red-500"
-                href="https://supercell.com/en/games/brawlstars/"
-                target="_blank"
-              >
-                Brawl Stars
-              </Link>{" "}
-              and{" "}
-              <Link
-                className="text-red-500"
-                href="https://marvelsnap.com/"
-                target="_blank"
-              >
-                Marvel SNAP
-              </Link>
+              such as
+              <span className="text-amber-500">
+                Brawl Stars and Marvel SNAP
+              </span>
               . I also enjoy{" "}
-              <span className="text-blue-500">reading fiction novels 📖</span>.
+              <span className="text-amber-500">reading fiction novels 📖</span>.
             </p>
             <p>
               I definitely also enjoy{" "}
-              <span className="text-blue-500">canoeing</span>. So far, I have
+              <span className="text-amber-500">canoeing</span>. So far, I have
               been paddling for {new Date().getFullYear() - 2022} years, and
               continue to train weekly at{" "}
-              <span className="text-blue-500">Macritchie Reservoir</span> in
+              <span className="text-amber-500">Macritchie Reservoir</span> in
               Singapore.
             </p>
             <p>
               Not only that, I also can play the{" "}
-              <span className="text-blue-500">violin</span>. I have achieved
+              <span className="text-amber-500">violin</span>. I have achieved
               grade 8, and have been playing for{" "}
               {new Date().getFullYear() - 2014} years, and definitely continue
               to enjoy playing classical pieces.
@@ -73,13 +61,7 @@ const Hobbies = () => {
           </div>
         </div>
         <div className="flex flex-col space-y-1">
-          <Image
-            src="/imgs/zk1.jpeg"
-            alt=""
-            width={400}
-            height={500}
-          />
-          <div className="text-center italic">Me in Pisa, Italy, 2019</div>
+          <Image src="/imgs/zk1.jpeg" alt="" width={400} height={500} />
         </div>
       </div>
     </div>

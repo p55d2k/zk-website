@@ -17,11 +17,11 @@ const NotFoundPage = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text">
           404
         </h1>
-        <p className="text-lg text-amber-500">
+        <p className="text-lg">
           Zhi Kai couldn&apos;t find the page you were looking for. <br />
           He defintitely isn&apos;t happy about it. <br />
           Click{" "}
-          <Link href="/" className="text-blue-500">
+          <Link href="/" className="text-amber-500 border-amber-500 border-b-2 hover:pb-1 transition-all duration-300 ease-in-out">
             here
           </Link>{" "}
           to go back to the homepage.

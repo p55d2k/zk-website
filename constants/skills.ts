@@ -111,11 +111,8 @@ const frontEnd = [
   TypeScript,
   ReactJS,
   NextJS,
-  TailwindCSS,
   ReactNative,
   Expo,
-  Redux,
-  MUI,
 ];
 
 export const ExpressJS = {
@@ -206,17 +203,13 @@ export const Cloudflare = {
 
 const utilities = [
   VSCode,
-  macOS,
   NodeJS,
-  Yarn,
   Bun,
-  Deno,
   Prettier,
   Git,
   Github,
   Vercel,
   StackOverflow,
-  ChatGPT,
   Copilot,
   Cloudflare,
 ];
@@ -236,13 +229,16 @@ export const Unity = {
   icon: SiUnity,
   link: "https://unity.com/",
 };
+
+const languages = [Python, CPlusPlus, Unity];
+
 export const Selenium = {
   name: "Selenium",
   icon: SiSelenium,
   link: "https://www.selenium.dev/",
 };
 
-const other = [Python, CPlusPlus, Unity, Selenium];
+const libraries = [TailwindCSS, MUI, Docusaurus, Redux, Selenium];
 
 const practicalSkills = [
   HTML5,
@@ -264,7 +260,7 @@ const practicalSkills = [
   Selenium,
 ];
 
-export { frontEnd, backEnd, utilities, other, practicalSkills };
+export { frontEnd, backEnd, utilities, languages, libraries, practicalSkills };
 
 export interface Skill {
   name: string;

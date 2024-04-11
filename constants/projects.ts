@@ -160,6 +160,16 @@ const projects: Project[] = [
     live: "https://zkgericht.vercel.app/",
     screenshot: "/imgs/screenshots/zkgericht.jpeg",
   },
+  {
+    name: "Conway's Game of Life",
+    description:
+      "A pygame implementation of Conway's Game of Life, a cellular automaton.",
+    detailedDescription:
+      "When I first heard of Conway's Game of Life, I was fascinated by the concept of cellular automata. I wanted to make a project that would be fun and interesting, and I thought that a Game of Life implementation would be a good idea. I learned about how to use Pygame and how to use it to make games while making this project.",
+    techStack: [Python],
+    github: "https://github.com/p55d2k/conway-game-of-life",
+    screenshot: "/imgs/screenshots/conwaysgameoflife.jpeg",
+  },
 ];
 
 export default projects;

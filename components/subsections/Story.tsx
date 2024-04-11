@@ -32,120 +32,91 @@ const Story = () => {
           } flex-col space-y-20 items-center justify-center`}
         >
           <div className="flex flex-col space-y-1 items-center justify-center">
-            <Image
-              src="/imgs/zk3.jpeg"
-              alt=""
-              width={400}
-              height={500}
-            />
+            <Image src="/imgs/zk3.jpeg" alt="" width={400} height={500} />
             <div className="text-center italic">Me in Dubai, UAE, 2023</div>
           </div>
           <div className="flex flex-col space-y-1 items-center justify-center">
-            <Image
-              src="/imgs/zk4.jpeg"
-              alt=""
-              width={400}
-              height={500}
-            />
-            <div className="text-center italic">Me paddling at Kallang Water Sports Centre for a Competition, Jan 2024</div>
-          </div>
-          <div className="flex flex-col space-y-1 items-center justify-center">
-            <Image
-              src="/imgs/zk5.jpeg"
-              alt=""
-              width={400}
-              height={500}
-            />
-            <div className="text-center italic">Me at Marina Bay Sands, Singapore</div>
+            <Image src="/imgs/zk4.jpeg" alt="" width={400} height={500} />
+            <div className="text-center italic">
+              Me paddling at Kallang Water Sports Centre for a Competition, Jan
+              2024
+            </div>
           </div>
         </div>
         <div
           className={`flex-col space-y-1 ${flexSection ? "flex" : "hidden"}`}
         >
-          <Image
-            src="/imgs/zk3.jpeg"
-            alt=""
-            width={400}
-            height={500}
-          />
+          <Image src="/imgs/zk3.jpeg" alt="" width={400} height={500} />
           <div className="text-center italic">Me in Dubai, UAE, 2023</div>
         </div>
-        <div className={`flex flex-col space-y-1 ${
-          flexSection ? "max-w-[500px]" : "max-w-[400px] lg:max-w-[500px]"
-        }`}>
-          <h3 className="text-xl md:text-2xl text-center md:text-left">
+        <div
+          className={`flex flex-col space-y-1 ${
+            flexSection ? "max-w-[500px]" : "max-w-[400px] lg:max-w-[500px]"
+          }`}
+        >
+          <h3 className="text-xl md:text-2xl lg:text-3xl text-center md:text-left">
             Who am I?
           </h3>
           <div className="flex flex-col space-y-3 text-sm md:text-base text-left md:text-left font-light pt-2">
             <p>
-              I was born in 2010 in London, United Kingdom. My parents happened
-              to be there for a work trip, and I was born there. For the next 2
-              years, my parents brought me to the surrounding countries in
-              Europe, and I was exposed to many different cultures.
+              I was born in 2010 in{" "}
+              <span className="text-amber-500">London, United Kingdom</span>. My
+              father was Singaporean, and my mother was Indonesian. We moved
+              back to Singapore when I was{" "}
+              <span className="text-amber-500">2</span> years old. I grew up in a
+              family of
+              <span className="text-amber-500">4</span>, with my parents, my
+              younger brother, and me.
             </p>
             <p>
-              My father was Singaporean, and my mother was Indonesian. She came
-              to Singapore for her work, when she met my father. They moved back
-              to Singapore when I was 2 years old.
+              I grew up in Singapore, and I was able to learn{" "}
+              <span className="text-amber-500">both English and Chinese</span>.
+              With my parents, I spoke English, and with my grandparents, I
+              spoke Chinese.
             </p>
             <p>
-              I grew up in Singapore, and I was exposed to the Chinese culture.
-              I was brought up in a Chinese-speaking environment where my
-              grandparents could not speak English, and spent a lot of time with
-              them. With my parents, I spoke English, and with my grandparents,
-              I spoke Chinese.
+              I went to a{" "}
+              <span className="text-amber-500">Nanyang Primary School</span>, and
+              joined the String Orchestra CCA, played the violin. When COVID-19
+              struck, and Singapore fell into a{" "}
+              <span className="text-amber-500">circut breaker lockdown</span>,
+              where I was forced to stay at home.
             </p>
             <p>
-              I went to a Nanyang Primary School, and made a lot of good
-              memories and friends there. I was in the String Orchestra CCA, and
-              played the violin. However, in 2020, when I was Primary 4,
-              COVID-19 struck, and Singapore fell into a circut breaker
-              lockdown. I had to stay at home, and I was not able to go to
-              school. I had to do Home-Based Learning, and I had to adapt to the
-              new normal.
+              This allowed me to{" "}
+              <span className="text-amber-500">self-learn programming</span>. As
+              I already had prior experience with Python, I was able to pick up{" "}
+              <span className="text-amber-500">web development</span>
+              quickly. I started to learn how to make websites, and I started to
+              <span className="text-amber-500">make my own projects</span>.
             </p>
             <p>
-              However, amdist the COVID-19 pandemic, the intensive use of
-              laptops allowed me to explore the world of programming. As I
-              already had prior experience with Python, I was able to pick up
-              web development quickly. I started to learn how to make websites,
-              and I started to make my own projects.
+              After <span className="text-amber-500">PSLE</span> (the Primary
+              School Leaving Examination, an examination Primary 6s take in
+              Singapore to decide their secondary school), I had lot of time,
+              and joined <span className="text-amber-500">Xcidic</span> as a{" "}
+              <span className="text-amber-500">Frontend Developer Intern</span>.
+              I was able to learn a lot of new things, and meet a lot of new
+              people of similar interests as well.
             </p>
             <p>
-              Personally, I feel that the Singaporean School System is rather
-              stressful. When the COVID period ended, I went back to school, and
-              it was already 2021, when I was P5. I had to prepare for the PSLE
-              (Primary School Leaving Examination), and I had to study hard.
+              Furthermore, I also had time to learn new sports. I picked up
+              <span className="text-amber-500">Canoeing</span>, was able to learn
+              how to paddle, and I was able to go for competitions.
             </p>
             <p>
-              After PSLE, I had lot of time, and joined Xcidic as a Frontend
-              Developer Intern. I was able to learn a lot of new things, and
-              meet a lot of new people of similar interests as well.
-            </p>
-            <p>
-              Furthermore, I also had time to learn new sports. My parents
-              signed me up for Canoeing and Water Polo, but I was more
-              interested in Canoeing. I was able to learn how to paddle, and I
-              was able to go for competitions. One year later, I stopped playing
-              Water Polo, to focus more on Canoeing.
-            </p>
-            <p>
-              When the results for PSLE came out, I was accepted into Hwa Chong
-              Institution through Infocomm DSA (Direct School Admission).{" "}
+              When the results for PSLE came out, I was accepted into{" "}
+              <span className="text-amber-500">Hwa Chong Institution</span>{" "}
+              through <span className="text-amber-500">Infocomm DSA</span>{" "}
+              (Direct School Admission).{" "}
               {new Date().getFullYear() > 2028
                 ? "I have already left the school."
                 : "I am still studying there now!"}{" "}
-              I was then accepted into the school&apos;s Infocomm Club, where I
+              I was then accepted into the school&apos;s{" "}
+              <span className="text-amber-500">Infocomm Club</span>, where I
               further developed my programming skills.
             </p>
-            <p>
-              In Secondary 2, I was accepted into my school&apos;s Student
-              Council. I was rather excited for that. I got to meet with a lot
-              of new people, and develop on my leadership skills. I then became
-              a buddy for the Secondary 1s, and I was able to help them adapt to
-              the new environment.
-            </p>
-            <p>
+            <p className="text-blue-500">
               Now, I am proud to be who I am, and I am excited to see what the
               future holds for me.
             </p>

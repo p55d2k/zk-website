@@ -25,7 +25,7 @@ const SkillsCard = ({ title, description, skills }: SkillsCardProps) => {
         className={`pt-2 md:pt-0 md:pl-4 grid ${
           isSmallScreen
             ? "grid-cols-1"
-            : "grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+            : "grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
         } font-light w-full`}
       >
         {skills.map((skill: Skill, index) => (

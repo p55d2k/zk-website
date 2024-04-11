@@ -45,3 +45,6 @@ next-env.d.ts
 # any files that are a check list should be ignored
 checklist.*
 
+# any vscode files should be ignored
+.vscode
+

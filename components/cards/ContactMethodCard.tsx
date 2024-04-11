@@ -13,9 +13,9 @@ const ContactMethodCard = ({ method }: ContactMethodCardProps) => {
       target="_blank"
       className="flex flex-col items-center justify-center space-y-2 p-5 min-h-[250px] md:min-h-[300px] lg:min-h-[350px] card w-full"
     >
-      <method.icon className="w-12 h-12" />
+      <method.icon className={`w-12 h-12 hover:text-amber-500 transition-colors duration-300 ease-in-out`} />
       <div className="text-center">
-        <p className={`text-lg md:text-xl lg:text-2xl font-semibold text-blue-500`}>
+        <p className="text-lg md:text-xl lg:text-2xl font-semibold text-amber-500">
           {method.name}
         </p>
         <p className="text-sm md:text-base lg:text-lg">{method.description}</p>

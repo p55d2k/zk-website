@@ -9,6 +9,7 @@ import Link from "next/link";
 
 import { TfiNewWindow } from "react-icons/tfi";
 import { redirect } from "next/navigation";
+import { TypeAnimation } from "react-type-animation";
 
 type ProjectPageProps = {
   params: {
@@ -38,7 +39,7 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
               alt=""
               width={0}
               height={0}
-              className="w-full rounded-lg"
+              className="w-full"
               unoptimized
             />
           )}
@@ -58,9 +59,15 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
         </div>
         <div className="flex flex-col h-full w-full divide-y-2 divide-slate-700">
           <div className="flex flex-col pb-4">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text pb-2">
-              {project?.name}
-            </h1>
+            {project?.name && (
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text pb-2">
+                <TypeAnimation
+                  sequence={[500, project?.name]}
+                  speed={50}
+                  repeat={1}
+                />
+              </h1>
+            )}
             <p className="text-sm sm:text-base md:text-lg">
               {project?.detailedDescription}
             </p>
