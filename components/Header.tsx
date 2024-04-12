@@ -32,6 +32,7 @@ const Header = () => {
       >
         <Link href="/">
           <Image
+            unoptimized
             src="/favicon.ico"
             alt=""
             width={40}
@@ -39,6 +40,7 @@ const Header = () => {
             className="block sm:hidden"
           />
           <Image
+            unoptimized
             src="/favicon.ico"
             alt=""
             width={50}

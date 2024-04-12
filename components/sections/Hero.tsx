@@ -35,9 +35,10 @@ const Hero = () => {
           autoPlay
           loop
           muted
-          className="object-cover w-full h-full pointer-events-none opacity-50 hidden md:flex"
+          className="object-cover w-screen h-full pointer-events-none opacity-50 hidden md:flex"
         />
         <Image
+          unoptimized
           src={"/hero.jpeg"}
           alt=""
           width={100}

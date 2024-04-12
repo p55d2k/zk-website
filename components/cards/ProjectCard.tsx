@@ -15,6 +15,7 @@ const ProjectCard = ({ proj, whiteText }: ProjectCardProps) => {
     >
       <div className="flex flex-col space-y-2">
         <Image
+          unoptimized
           src={proj.screenshot}
           alt={proj.name}
           width={400}

@@ -10,8 +10,7 @@ const Skills = () => {
       <SectionHeader
         sequence={["programming skillset", 4000, "编程技能", 4000]}
       >
-        list of my <span className=" text-pink-500">skillset</span> - and what i
-        use
+        my <span className=" text-pink-500">skillset</span> - what do i use?
       </SectionHeader>
       <div className="flex flex-col px-8 sm:px-16 md:px-20 space-y-4 items-center justify-center">
         <SkillsCard

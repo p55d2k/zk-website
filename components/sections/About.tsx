@@ -23,7 +23,13 @@ const About = () => {
               : "flex-row space-x-6 lg:space-x-14 xl:space-x-20"
           } items-center justify-center py-3`}
         >
-          <Image src="/imgs/zk2.jpeg" alt="" width={500} height={500} />
+          <Image
+            unoptimized
+            src="/imgs/zk2.jpeg"
+            alt=""
+            width={500}
+            height={500}
+          />
           <div
             className={`flex flex-col space-y-1 ${
               flexSection

@@ -50,3 +50,7 @@
 - made about section larger
 - button redesign
 
+### v0.1.4a - 12/4/2024
+- removed unused dependencies
+- attempt to fix slow loading of images
+

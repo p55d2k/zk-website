@@ -32,22 +32,34 @@ const Story = () => {
           } flex-col space-y-20 items-center justify-center`}
         >
           <div className="flex flex-col space-y-1 items-center justify-center">
-            <Image src="/imgs/zk3.jpeg" alt="" width={400} height={500} />
-            <div className="text-center italic">Me in Dubai, UAE, 2023</div>
+            <Image
+              unoptimized
+              src="/imgs/zk3.jpeg"
+              alt=""
+              width={400}
+              height={500}
+            />
           </div>
           <div className="flex flex-col space-y-1 items-center justify-center">
-            <Image src="/imgs/zk4.jpeg" alt="" width={400} height={500} />
-            <div className="text-center italic">
-              Me paddling at Kallang Water Sports Centre for a Competition, Jan
-              2024
-            </div>
+            <Image
+              unoptimized
+              src="/imgs/zk4.jpeg"
+              alt=""
+              width={400}
+              height={500}
+            />
           </div>
         </div>
         <div
           className={`flex-col space-y-1 ${flexSection ? "flex" : "hidden"}`}
         >
-          <Image src="/imgs/zk3.jpeg" alt="" width={400} height={500} />
-          <div className="text-center italic">Me in Dubai, UAE, 2023</div>
+          <Image
+            unoptimized
+            src="/imgs/zk3.jpeg"
+            alt=""
+            width={400}
+            height={500}
+          />
         </div>
         <div
           className={`flex flex-col space-y-1 ${
@@ -63,8 +75,8 @@ const Story = () => {
               <span className="text-amber-500">London, United Kingdom</span>. My
               father was Singaporean, and my mother was Indonesian. We moved
               back to Singapore when I was{" "}
-              <span className="text-amber-500">2</span> years old. I grew up in a
-              family of
+              <span className="text-amber-500">2</span> years old. I grew up in
+              a family of
               <span className="text-amber-500">4</span>, with my parents, my
               younger brother, and me.
             </p>
@@ -76,9 +88,9 @@ const Story = () => {
             </p>
             <p>
               I went to a{" "}
-              <span className="text-amber-500">Nanyang Primary School</span>, and
-              joined the String Orchestra CCA, played the violin. When COVID-19
-              struck, and Singapore fell into a{" "}
+              <span className="text-amber-500">Nanyang Primary School</span>,
+              and joined the String Orchestra CCA, played the violin. When
+              COVID-19 struck, and Singapore fell into a{" "}
               <span className="text-amber-500">circut breaker lockdown</span>,
               where I was forced to stay at home.
             </p>
@@ -101,8 +113,8 @@ const Story = () => {
             </p>
             <p>
               Furthermore, I also had time to learn new sports. I picked up
-              <span className="text-amber-500">Canoeing</span>, was able to learn
-              how to paddle, and I was able to go for competitions.
+              <span className="text-amber-500">Canoeing</span>, was able to
+              learn how to paddle, and I was able to go for competitions.
             </p>
             <p>
               When the results for PSLE came out, I was accepted into{" "}

@@ -20,7 +20,6 @@ import {
   SiTypescript,
   SiVercel,
   SiStackoverflow,
-  SiDeno,
   SiSelenium,
   SiPython,
   SiUnity,
@@ -159,7 +158,6 @@ export const Yarn = {
   link: "https://yarnpkg.com/",
 };
 export const Bun = { name: "Bun", icon: SiBun, link: "https://bun.sh/" };
-export const Deno = { name: "Deno", icon: SiDeno, link: "https://deno.land/" };
 export const Prettier = {
   name: "Prettier",
   icon: SiPrettier,

@@ -1,6 +1,6 @@
 const versionData = {
-  version: "0.1.4",
-  lastUpdated: "11/4/24",
+  version: "0.1.4a",
+  lastUpdated: "12/4/24",
 };
 
 export default versionData;

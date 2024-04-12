@@ -14,6 +14,7 @@ const ExperienceCard = ({ exp }: ExperienceCardProps) => {
       target="_blank"
     >
       <Image
+        unoptimized
         src={exp.logo}
         alt={exp.companyName}
         width={300}

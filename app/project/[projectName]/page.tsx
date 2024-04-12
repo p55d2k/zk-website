@@ -35,12 +35,12 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
         <div className="flex flex-col items-center justify-center space-y-2 lg:max-w-[80%]">
           {project?.screenshot && (
             <Image
+              unoptimized
               src={project.screenshot}
               alt=""
               width={0}
               height={0}
               className="w-full"
-              unoptimized
             />
           )}
           {project?.techStack && (
