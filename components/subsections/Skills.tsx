@@ -1,17 +1,25 @@
 "use client";
 
-import { backEnd, frontEnd, utilities, languages, libraries } from "@/constants/skills";
+import {
+  backEnd,
+  frontEnd,
+  utilities,
+  languages,
+  libraries,
+} from "@/constants/skills";
 import SkillsCard from "../cards/SkillsCard";
-import SectionHeader from "../SectionHeader";
+import SubsectionHeader from "../SubsectionHeader";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col text-white space-y-6 mt-12 min-h-screen items-center justify-center" id="skills">
-      <SectionHeader
+    <div
+      className="flex flex-col text-white space-y-6 mt-12 items-center"
+      id="skills"
+    >
+      <SubsectionHeader
+        subtitle="what do i use?"
         sequence={["programming skillset", 4000, "编程技能", 4000]}
-      >
-        my <span className=" text-pink-500">skillset</span> - what do i use?
-      </SectionHeader>
+      />
       <div className="flex flex-col px-8 sm:px-16 md:px-20 space-y-4 items-center justify-center">
         <SkillsCard
           title="Front-End"

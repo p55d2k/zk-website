@@ -2,13 +2,13 @@ import { TypeAnimation } from "react-type-animation";
 
 interface SubsectionHeaderProps {
   subtitle?: string;
-  typeSequence: (number | string)[];
+  sequence: (number | string)[];
   className?: string;
 }
 
 const SubsectionHeader = ({
   subtitle,
-  typeSequence,
+  sequence,
   className
 }: SubsectionHeaderProps) => {
   return (
@@ -23,7 +23,7 @@ const SubsectionHeader = ({
         } text-white bg-clip-text text-center ${className}`}
       >
         <TypeAnimation
-          sequence={typeSequence}
+          sequence={sequence}
           speed={70}
           repeat={Infinity}
           cursor={true}

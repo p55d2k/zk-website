@@ -15,7 +15,7 @@ const Story = () => {
       id="story"
     >
       <SubsectionHeader
-        typeSequence={["the story of my life", 4000, "我的故事", 4000]}
+        sequence={["the story of my life", 4000, "我的故事", 4000]}
         subtitle=""
         className="!pb-2"
       />
@@ -76,9 +76,8 @@ const Story = () => {
               father was Singaporean, and my mother was Indonesian. We moved
               back to Singapore when I was{" "}
               <span className="text-amber-500">2</span> years old. I grew up in
-              a family of
-              <span className="text-amber-500">4</span>, with my parents, my
-              younger brother, and me.
+              a family of <span className="text-amber-500">4</span>, with my
+              parents, my younger brother, and me.
             </p>
             <p>
               I grew up in Singapore, and I was able to learn{" "}
@@ -98,8 +97,8 @@ const Story = () => {
               This allowed me to{" "}
               <span className="text-amber-500">self-learn programming</span>. As
               I already had prior experience with Python, I was able to pick up{" "}
-              <span className="text-amber-500">web development</span>
-              quickly. I started to learn how to make websites, and I started to
+              <span className="text-amber-500">web development</span> quickly. I
+              started to learn how to make websites, and I started to{" "}
               <span className="text-amber-500">make my own projects</span>.
             </p>
             <p>
@@ -112,7 +111,7 @@ const Story = () => {
               people of similar interests as well.
             </p>
             <p>
-              Furthermore, I also had time to learn new sports. I picked up
+              Furthermore, I also had time to learn new sports. I picked up{" "}
               <span className="text-amber-500">Canoeing</span>, was able to
               learn how to paddle, and I was able to go for competitions.
             </p>

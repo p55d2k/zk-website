@@ -5,7 +5,7 @@ const Footer = async () => {
   return (
     <div
       id="footer"
-      className="bg-slate-600 text-2xl flex flex-col w-full justify-center items-center p-8 space-y-2"
+      className="bg-slate-900 text-2xl flex flex-col w-full justify-center items-center p-8 space-y-2"
     >
       <div className="flex flex-col space-y-1 md:space-y-0 md:space-x-4 md:flex-row items-center justify-center w-full">
         <div className="flex flex-row justify-center space-x-4">
@@ -25,7 +25,7 @@ const Footer = async () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col space-y-1 text-center">
+      <div className="flex flex-col space-y-1 text-center text-white">
         <p className="text-sm">
           Copyright &copy; {new Date().getFullYear()} p55d2k
         </p>
@@ -33,11 +33,17 @@ const Footer = async () => {
           <Link
             href="https://github.com/p55d2k/zk-website"
             target="_blank"
-            className="text-gray-400 hover:text-gray-300 transition-all ease-in-out duration-300"
+            className="text-amber-500 hover:text-amber-300 transition-all ease-in-out duration-300"
           >
             Source Code
           </Link>{" "}
-          • v{versionData.version} • Last updated: {versionData.lastUpdated}
+          • v{versionData.version} •{" "}
+          <Link
+            href="/versions"
+            className="text-amber-500 hover:text-amber-300 transition-all ease-in-out duration-300"
+          >
+            Previous Versions
+          </Link>
         </p>
       </div>
     </div>

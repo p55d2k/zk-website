@@ -4,7 +4,7 @@ import ContactMethodCard from "../cards/ContactMethodCard";
 
 const Contact = () => {
   return (
-    <div className="pt-20 flex flex-col" id="contact">
+    <div className="mt-16 flex flex-col" id="contact">
       <div className="flex flex-col text-white px-8 sm:px-16 md:px-20 space-y-6 items-center">
         <SectionHeader sequence={["get in touch", 4000, "联络我", 4000]}>
           <span className="text-purple-500">contact</span> me

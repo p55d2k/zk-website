@@ -16,7 +16,7 @@ const Hobbies = () => {
       id="hobbies"
     >
       <SubsectionHeader
-        typeSequence={["my hobbies", 4000, "我的爱好", 4000]}
+        sequence={["my hobbies", 4000, "我的爱好", 4000]}
         subtitle=""
         className="!pb-2"
       />
@@ -36,7 +36,7 @@ const Hobbies = () => {
               Ever since I was young, I always enjoyed{" "}
               <span className="text-amber-500">mobile gaming</span> (which was
               also due to the encouragement from my peers). These include games
-              such as
+              such as{" "}
               <span className="text-amber-500">
                 Brawl Stars and Marvel SNAP
               </span>

@@ -13,7 +13,7 @@ body {
 }
 
 .footer-link {
-  @apply cursor-pointer text-lg md:text-xl lg:text-2xl border-b-2 border-black pb-0 mt-1 mb-1 hover:pb-2 hover:mt-0 hover:mb-0 transition-all ease-in-out;
+  @apply text-white cursor-pointer text-lg md:text-xl lg:text-2xl border-b-2 border-white pb-0 mt-1 mb-1 hover:pb-2 hover:mt-0 hover:mb-0 transition-all ease-in-out;
 }
 
 .button {
