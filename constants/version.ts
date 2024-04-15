@@ -1,6 +1,6 @@
 const versionData: Version = {
-  version: "0.1.5a",
-  lastUpdated: "15/4/24",
+  version: "0.1.5b",
+  lastUpdated: "16/4/24",
 };
 
 export default versionData;
@@ -14,6 +14,12 @@ export interface Version {
 
 export const versions: Version[] = [
   versionData,
+  {
+    version: "0.1.5a",
+    lastUpdated: "15/4/24",
+    commit:
+      "https://github.com/p55d2k/zk-website/commit/f51e1a1f5a09412c238dd2c8c2a9d1b6b8af5b9f",
+  },
   {
     version: "0.1.5",
     lastUpdated: "13/4/24",

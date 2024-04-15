@@ -1,5 +1,12 @@
 # zk-website CHANGELOG
 
+### v0.1.5b - 16/4/2024
+
+- edited backtotop to be responsive for mobile
+- fixed bugfixes for footer where links would not work
+- removed menu for header on mobile as the footer was cleaner
+- made 404 project page redirect to 404 page instead of the project page
+
 ### v0.1.5a - 15/4/2024
 
 - begun to work on testimonials, but is not in production yet

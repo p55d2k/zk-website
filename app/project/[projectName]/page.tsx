@@ -23,7 +23,7 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
   useEffect(() => {
     const currentProject = getProject(projectName);
     if (!currentProject) {
-      redirect("/project");
+      redirect("/404");
     }
     setProject(currentProject);
   }, [projectName]);

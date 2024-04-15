@@ -9,18 +9,18 @@ const Footer = async () => {
     >
       <div className="flex flex-col space-y-1 md:space-y-0 md:space-x-4 md:flex-row items-center justify-center w-full">
         <div className="flex flex-row justify-center space-x-4">
-          <Link href="#about" className="footer-link">
+          <Link href="/#about" className="footer-link">
             About
           </Link>
-          <Link href="#experience" className="footer-link">
+          <Link href="/#experience" className="footer-link">
             Experience
           </Link>
         </div>
         <div className="flex flex-row justify-center space-x-4">
-          <Link href="#projects" className="footer-link">
+          <Link href="/#projects" className="footer-link">
             Projects
           </Link>
-          <Link href="#contact" className="footer-link">
+          <Link href="/#contact" className="footer-link">
             Contact
           </Link>
         </div>

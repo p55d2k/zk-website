@@ -24,7 +24,7 @@ const BackToTop = () => {
         className={`items-center justify-center p-3 hover:mb-2 transition-all duration-300 ease-in-out`}
         href={"/#header"}
       >
-        <FaArrowUp className="h-10 w-10" />
+        <FaArrowUp className="w-6 h-6 md:h-10 md:w-10" />
       </Link>
     </div>
   );

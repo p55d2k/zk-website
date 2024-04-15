@@ -1,8 +1,5 @@
 "use client";
 
-import { headerMenuOpenAtom } from "@/atoms/headerMenuOpenAtom";
-import { useRecoilValue } from "recoil";
-
 import { TypeAnimation } from "react-type-animation";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
@@ -17,19 +14,9 @@ const Hero = () => {
     gsap.to("#typeAnim", { opacity: 1, y: 0, delay: 1.3 });
   }, []);
 
-  const headerMenuOpen = useRecoilValue(headerMenuOpenAtom);
-
   return (
-    <div
-      className={`flex flex-col items-center justify-center ${
-        headerMenuOpen ? "h-[80vh]" : "h-[90vh]"
-      } pb-20 md:pb-0`}
-    >
-      <div
-        className={`absolute left-0 right-0 bottom-0 w-screen ${
-          headerMenuOpen ? "top-[20vh] h-[80vh]" : "top-[10vh] h-[90vh]"
-        }`}
-      >
+    <div className="flex flex-col items-center justify-center h-[90vh] pb-20 md:pb-0">
+      <div className="absolute left-0 right-0 bottom-0 w-screen top-[10vh] h-[90vh]">
         <video
           src="/hero.mp4"
           autoPlay

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { RecoilRoot } from "@/lib/recoil";
 import "./globals.css";
 
 import Header from "@/components/Header";
@@ -25,13 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + " bg-black"}>
-        <RecoilRoot>
-          <Header />
-          <div className="h-full min-h-[80vh] text-white w-full">
-            {children}
-          </div>
-          <Footer />
-        </RecoilRoot>
+        <Header />
+        <div className="h-full min-h-[80vh] text-white w-full">{children}</div>
+        <Footer />
       </body>
     </html>
   );
