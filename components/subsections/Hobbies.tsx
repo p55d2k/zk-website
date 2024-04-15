@@ -34,13 +34,8 @@ const Hobbies = () => {
           <div className="flex flex-col space-y-3 text-sm md:text-base text-left md:text-left font-light pt-2">
             <p>
               Ever since I was young, I always enjoyed{" "}
-              <span className="text-amber-500">mobile gaming</span> (which was
-              also due to the encouragement from my peers). These include games
-              such as{" "}
-              <span className="text-amber-500">
-                Brawl Stars and Marvel SNAP
-              </span>
-              . I also enjoy{" "}
+              <span className="text-amber-500">mobile gaming</span>. I also
+              enjoy{" "}
               <span className="text-amber-500">reading fiction novels 📖</span>.
             </p>
             <p>

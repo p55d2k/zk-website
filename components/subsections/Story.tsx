@@ -73,8 +73,7 @@ const Story = () => {
             <p>
               I was born in 2010 in{" "}
               <span className="text-amber-500">London, United Kingdom</span>. My
-              father was Singaporean, and my mother was Indonesian. We moved
-              back to Singapore when I was{" "}
+              family moved back to Singapore when I was{" "}
               <span className="text-amber-500">2</span> years old. I grew up in
               a family of <span className="text-amber-500">4</span>, with my
               parents, my younger brother, and me.
@@ -117,9 +116,7 @@ const Story = () => {
             </p>
             <p>
               When the results for PSLE came out, I was accepted into{" "}
-              <span className="text-amber-500">Hwa Chong Institution</span>{" "}
-              through <span className="text-amber-500">Infocomm DSA</span>{" "}
-              (Direct School Admission).{" "}
+              <span className="text-amber-500">Hwa Chong Institution</span>, and{" "}
               {new Date().getFullYear() > 2028
                 ? "I have already left the school."
                 : "I am still studying there now!"}{" "}

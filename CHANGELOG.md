@@ -1,5 +1,11 @@
 # zk-website CHANGELOG
 
+### v0.1.5a - 15/4/2024
+
+- begun to work on testimonials, but is not in production yet
+- updated skillset and renamed it to techstack
+- edited story page
+
 ### v0.1.5 - 13/4/2024
 
 - updated nextjs to latest (14.2.1)

@@ -10,11 +10,11 @@ import {
 import SkillsCard from "../cards/SkillsCard";
 import SubsectionHeader from "../SubsectionHeader";
 
-const Skills = () => {
+const TechStack = () => {
   return (
     <div
       className="flex flex-col text-white space-y-6 mt-12 items-center"
-      id="skills"
+      id="techstack"
     >
       <SubsectionHeader
         subtitle="what do i use?"
@@ -51,4 +51,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default TechStack;

@@ -8,7 +8,11 @@ import {
   FaNodeJs,
   FaRegUserCircle,
 } from "react-icons/fa";
-import { TbBrandReactNative, TbBrandVscode } from "react-icons/tb";
+import {
+  TbBrandReactNative,
+  TbBrandVscode,
+  TbBrandCSharp,
+} from "react-icons/tb";
 import {
   SiExpo,
   SiJavascript,
@@ -227,8 +231,13 @@ export const Unity = {
   icon: SiUnity,
   link: "https://unity.com/",
 };
+export const CSharp = {
+  name: "C#",
+  icon: TbBrandCSharp,
+  link: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+};
 
-const languages = [Python, CPlusPlus, Unity];
+const languages = [Python, CPlusPlus, Unity, CSharp];
 
 export const Selenium = {
   name: "Selenium",
@@ -236,7 +245,7 @@ export const Selenium = {
   link: "https://www.selenium.dev/",
 };
 
-const libraries = [TailwindCSS, MUI, Docusaurus, Redux, Selenium];
+const libraries = [TailwindCSS, Docusaurus, Redux, Selenium];
 
 const practicalSkills = [
   HTML5,

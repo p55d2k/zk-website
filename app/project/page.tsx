@@ -63,7 +63,7 @@ const ProjectListing = () => {
                 )
               }
             >
-              <option value="">Filter</option>
+              <option value="">Filter by Skill</option>
               {practicalSkills.map((skill, index) => (
                 <option key={index} value={skill.name}>
                   {skill.name}

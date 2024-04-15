@@ -4,7 +4,8 @@ import Experience from "@/components/sections/Experience";
 import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 
-import Skills from "@/components/subsections/Skills";
+import TechStack from "@/components/subsections/TechStack";
+import Testimonials from "@/components/subsections/Testimonials";
 
 import BackToTop from "@/components/BackToTop";
 
@@ -19,7 +20,7 @@ const Home = () => {
       >
         <div className="flex flex-col">
           <About />
-          <Skills />
+          <TechStack />
         </div>
         <Experience />
         <Projects />
