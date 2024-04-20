@@ -87,6 +87,15 @@ const projects: Project[] = [
     screenshot: "/imgs/screenshots/taskcraft.jpeg",
   },
   {
+    name: "ZKShortLinks",
+    description: "A simple URL shortener made with Next.js and Firebase",
+    detailedDescription:
+      "A URL shortener would be a fun project. I learned a lot about how to use dynamic API routes while making this project.",
+    techStack: [NextJS, Firebase],
+    live: "https://zksl.vercel.app",
+    screenshot: "/imgs/screenshots/zkshortlinks.jpeg",
+  },
+  {
     name: "Pokedex",
     description:
       "A simple Pokedex made with NextJS, MUI, TypeScript, Vanilla CSS, and Redux.",

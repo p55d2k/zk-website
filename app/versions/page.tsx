@@ -16,8 +16,8 @@ const VersionPage = () => {
             <Link
               key={index}
               className={`card flex flex-col space-y-2 p-4 ${
-                !version.link && "!bg-slate-800 !cursor-default"
-              }`}
+                index === 0 && "!bg-slate-800"
+              } ${!version.link && "!cursor-default"} h-32 justify-center`}
               href={version?.link ? version.link : "#"}
               target={version?.link ? "_blank" : "_self"}
             >
@@ -37,7 +37,9 @@ const VersionPage = () => {
               <p className="text-lg text-amber-500">
                 {version.link
                   ? version.link
-                  : "This version is the current version!"}
+                  : index === 0
+                  ? "This version is the current version!"
+                  : "This version is not available."}
               </p>
             </Link>
           ))}

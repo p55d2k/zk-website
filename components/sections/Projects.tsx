@@ -4,6 +4,7 @@ import SectionHeader from "../SectionHeader";
 import projects from "@/constants/projects";
 import ProjectCard from "../cards/ProjectCard";
 import Link from "next/link";
+import ShinyButton from "../ShinyButton";
 
 const Projects = () => {
   return (
@@ -20,8 +21,8 @@ const Projects = () => {
           ))}
         </div>
         <div className="flex flex-row w-full justify-end items-center">
-          <Link href="/project" className="flex flex-row space-x-4">
-            <button className="button uppercase !font-light">view all</button>
+          <Link href="/project">
+            <ShinyButton text="view all" />
           </Link>
         </div>
       </div>

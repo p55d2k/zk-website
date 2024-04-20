@@ -1,5 +1,11 @@
 # zk-website CHANGELOG
 
+### v0.1.5c - 20/4/2024
+
+- fixed version page showing "this is the current version" when it is not
+- added one more project
+- button redesign
+
 ### v0.1.5b - 16/4/2024
 
 - edited backtotop to be responsive for mobile

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useMedia } from "react-use";
 
 import SectionHeader from "../SectionHeader";
+import ShinyButton from "../ShinyButton";
 
 const About = () => {
   const flexSection = useMedia("(max-width: 900px)", false);
@@ -47,7 +48,7 @@ const About = () => {
               I am <span className="text-amber-500">Wan Zhi Kai</span>, a
               Singaporean software engineer, specialised in frontend
               development. I am currently a high school student at{" "}
-              <span className="text-amber-500">Hwa Chong Instituion</span>, and
+              <span className="text-amber-500">Hwa Chong Institution</span>, and
               I am {new Date().getFullYear() - 2010} years old this year! 🎉
             </p>{" "}
             <p>
@@ -74,8 +75,8 @@ const About = () => {
               </span>
               !
             </p>
-            <Link className="button uppercase !font-light" href="/story">
-              read more
+            <Link href="/story">
+              <ShinyButton text="read more" />
             </Link>
           </div>
         </div>
