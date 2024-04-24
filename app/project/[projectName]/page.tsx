@@ -11,7 +11,7 @@ import { TfiNewWindow } from "react-icons/tfi";
 import { redirect } from "next/navigation";
 import { TypeAnimation } from "react-type-animation";
 
-type ProjectPageProps = {
+interface ProjectPageProps {
   params: {
     projectName: string;
   };

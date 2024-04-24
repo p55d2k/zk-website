@@ -22,7 +22,7 @@ const Hero = () => {
           autoPlay
           loop
           muted
-          className="object-cover w-screen h-full pointer-events-none opacity-50 hidden md:flex"
+          className="object-cover w-screen h-full pointer-events-none opacity-90 hidden md:flex"
         />
         <Image
           unoptimized
@@ -30,7 +30,7 @@ const Hero = () => {
           alt=""
           width={100}
           height={100}
-          className="object-cover w-full h-full pointer-events-none opacity-50 md:hidden"
+          className="object-cover w-full h-full pointer-events-none opacity-90 md:hidden"
         />
         <div className="absolute top-0 left-0 right-0 bottom-0 h-full w-full z-20 bg-gradient-to-b from-slate-900 via-black/0 to-black" />
       </div>

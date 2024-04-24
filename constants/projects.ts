@@ -139,15 +139,6 @@ const projects: Project[] = [
     screenshot: "/imgs/screenshots/cinewave.jpeg",
   },
   {
-    name: "ZKLingo",
-    description: "A duolingo clone - also from a video tutorial!",
-    detailedDescription:
-      "This was a NextJS website made with TypeScript as well. I watched a video tutorial on how to make a Duolingo clone (https://www.youtube.com/watch?v=dP75Khfy4s4 by Code with Antonio), and it would be fun to make this, especially due to the memes around the time. This was my first project with Clerk and MongoDB, and I learned a lot about how to use them while making this project.",
-    techStack: [NextJS, MongoDB, Clerk, TailwindCSS],
-    live: "https://zklingo.vercel.app",
-    screenshot: "/imgs/screenshots/zklingo.jpeg",
-  },
-  {
     name: "ZK-GPT3 Website",
     description:
       "A website for a GPT-3 website demo that I made for fun! I learnt it from a video tutorial.",
@@ -165,7 +156,6 @@ const projects: Project[] = [
     detailedDescription:
       "This was my third ReactJS website, after GPT3 Website. I watched the same video tutorial on learning ReactJS, and learnt how to create a restaurant website from this. What I learnt was how to use ReactJS, and from then on, I began to learn about NextJS and began transitioning to NextJS as I found it more powerful.",
     techStack: [ReactJS, CSS3, JavaScript],
-    github: "https://github.com/p55d2k/gericht-restaurant",
     live: "https://zkgericht.vercel.app/",
     screenshot: "/imgs/screenshots/zkgericht.jpeg",
   },

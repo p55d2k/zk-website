@@ -1,5 +1,14 @@
 # zk-website CHANGELOG
 
+### v0.1.5d - 24/4/2024
+
+- made bg video more opaque
+- edited image in story
+- changed ratio of image to text in story
+- added a shortcut url to visit any project's live website
+- removed some projects and their github links
+- added method to contact me via telegram
+
 ### v0.1.5c - 20/4/2024
 
 - fixed version page showing "this is the current version" when it is not

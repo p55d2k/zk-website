@@ -34,9 +34,9 @@ const Story = () => {
           <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
               unoptimized
-              src="/imgs/zk3.jpeg"
+              src="/imgs/zk5.jpeg"
               alt=""
-              width={400}
+              width={300}
               height={500}
             />
           </div>
@@ -45,7 +45,7 @@ const Story = () => {
               unoptimized
               src="/imgs/zk4.jpeg"
               alt=""
-              width={400}
+              width={300}
               height={500}
             />
           </div>
@@ -55,7 +55,7 @@ const Story = () => {
         >
           <Image
             unoptimized
-            src="/imgs/zk3.jpeg"
+            src="/imgs/zk5.jpeg"
             alt=""
             width={400}
             height={500}
@@ -63,7 +63,7 @@ const Story = () => {
         </div>
         <div
           className={`flex flex-col space-y-1 ${
-            flexSection ? "max-w-[500px]" : "max-w-[400px] lg:max-w-[500px]"
+            flexSection ? "max-w-[400px] md:max-w-[500px]" : "max-w-[400px] xl:max-w-[500px]"
           }`}
         >
           <h3 className="text-xl md:text-2xl lg:text-3xl text-center md:text-left">
