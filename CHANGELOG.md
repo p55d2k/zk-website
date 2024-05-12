@@ -1,5 +1,14 @@
 # zk-website CHANGELOG
 
+### v0.1.6 - 12/5/2024
+
+- made versions page header centered
+- made versions page header non-gradient
+- added fiverr as contact method
+- removed unnecessary images
+- added other platforms for contact
+- fixed bug where view all would have no bottom margin
+
 ### v0.1.5d - 24/4/2024
 
 - made bg video more opaque

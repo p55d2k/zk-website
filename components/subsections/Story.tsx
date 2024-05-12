@@ -34,7 +34,7 @@ const Story = () => {
           <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
               unoptimized
-              src="/imgs/zk5.jpeg"
+              src="/imgs/zk4.jpeg"
               alt=""
               width={300}
               height={500}
@@ -43,7 +43,7 @@ const Story = () => {
           <div className="flex flex-col space-y-1 items-center justify-center">
             <Image
               unoptimized
-              src="/imgs/zk4.jpeg"
+              src="/imgs/zk3.jpeg"
               alt=""
               width={300}
               height={500}
@@ -55,7 +55,7 @@ const Story = () => {
         >
           <Image
             unoptimized
-            src="/imgs/zk5.jpeg"
+            src="/imgs/zk4.jpeg"
             alt=""
             width={400}
             height={500}

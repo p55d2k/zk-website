@@ -8,9 +8,9 @@ const VersionPage = () => {
     <div className="flex flex-col divide-y-2 divide-slate-700 px-4 sm:px-6 md:px-10 lg:px-14 pb-12">
       <PageHeader text="Back" goBack className="pt-5" />
       <div className="flex flex-col w-full" id="version">
-        <SectionHeader gradientHeader showSubtitle subtitle="">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center p-4 md:p-8">
           Version History
-        </SectionHeader>
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {versions.map((version: Version, index) => (
             <Link

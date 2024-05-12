@@ -5,6 +5,7 @@ import Projects from "@/components/sections/Projects";
 import Contact from "@/components/sections/Contact";
 
 import TechStack from "@/components/subsections/TechStack";
+import OtherContact from "@/components/subsections/OtherContact";
 import Testimonials from "@/components/subsections/Testimonials";
 
 import BackToTop from "@/components/BackToTop";
@@ -24,7 +25,10 @@ const Home = () => {
         </div>
         <Experience />
         <Projects />
-        <Contact />
+        <div className="flex flex-col">
+          <Contact />
+          <OtherContact />
+        </div>
       </div>
     </div>
   );

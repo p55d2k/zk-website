@@ -9,7 +9,7 @@ import ShinyButton from "../ShinyButton";
 const Projects = () => {
   return (
     <div className="mt-16 flex flex-col" id="projects">
-      <div className="flex flex-col text-white px-8 sm:px-16 md:px-20 space-y-6 items-center">
+      <div className="flex flex-col text-white px-8 sm:px-16 md:px-20 pb-14 space-y-6 items-center">
         <SectionHeader
           sequence={["my project showcase", 4000, "作品展示", 4000]}
         >
