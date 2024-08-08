@@ -3,11 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { usePathname } from "next/navigation";
+
 const Header = () => {
+  const pathname = usePathname();
+
   return (
     <div className="flex flex-col">
       <header
-        className="w-full bg-slate-900 text-white py-6 px-8 flex flex-row justify-between h-[10vh] items-center"
+        className={`w-full ${
+          pathname === "/" ? "bg-slate-900" : "bg-black"
+        } text-white py-6 px-8 flex flex-row justify-between h-[10vh] items-center`}
         id="header"
       >
         <Link href="/">

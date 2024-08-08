@@ -15,7 +15,7 @@ interface ProjectPageProps {
   params: {
     projectName: string;
   };
-};
+}
 
 const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
   const [project, setProject] = useState<Project | undefined>(undefined);
@@ -29,7 +29,7 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
   }, [projectName]);
 
   return (
-    <div className="p-4 sm:p-6 md:p-10 lg:p-14 flex flex-col divide-y-2 divide-slate-700">
+    <div className="p-4 sm:p-6 md:p-10 lg:p-14 !pt-2 flex flex-col divide-y-2 divide-slate-700">
       <PageHeader text="Back to Projects Page" redirectUrl="/project" />
       <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-10 xl:space-x-16 pt-5">
         <div className="flex flex-col items-center justify-center space-y-2 lg:max-w-[80%]">
@@ -77,9 +77,9 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
               <Link
                 href={project.github}
                 target="_blank"
-                className="flex flex-row items-end justify-center space-y-0 space-x-2"
+                className="flex flex-row items-end justify-center space-y-0 space-x-2 group"
               >
-                <p className="text-center border-b-2 border-white pt-1 hover:pt-0 hover:pb-1 transition-all duration-300 ease-in-out">
+                <p className="text-center border-b-2 border-white pt-1 group-hover:pt-0 group-hover:pb-1 duration-150 ease-in-out transition-all">
                   Github
                 </p>
                 <TfiNewWindow className="w-8 h-8" />
@@ -89,9 +89,9 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
               <Link
                 href={project?.live || ""}
                 target="_blank"
-                className="flex flex-row items-end justify-center space-y-0 space-x-2"
+                className="flex flex-row items-end justify-center space-y-0 space-x-2 group"
               >
-                <p className="text-center border-b-2 border-white pt-1 hover:pt-0 hover:pb-1 transition-all duration-300 ease-in-out">
+                <p className="text-center border-b-2 border-white pt-1 group-hover:pt-0 group-hover:pb-1 duration-150 ease-in-out transition-all">
                   Live Website
                 </p>
                 <TfiNewWindow className="w-8 h-8" />

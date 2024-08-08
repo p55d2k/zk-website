@@ -63,7 +63,9 @@ const Story = () => {
         </div>
         <div
           className={`flex flex-col space-y-1 ${
-            flexSection ? "max-w-[400px] md:max-w-[500px]" : "max-w-[400px] xl:max-w-[500px]"
+            flexSection
+              ? "max-w-[400px] md:max-w-[500px]"
+              : "max-w-[400px] xl:max-w-[500px]"
           }`}
         >
           <h3 className="text-xl md:text-2xl lg:text-3xl text-center md:text-left">
@@ -85,17 +87,18 @@ const Story = () => {
               spoke Chinese.
             </p>
             <p>
-              I went to a{" "}
+              I went to{" "}
               <span className="text-amber-500">Nanyang Primary School</span>,
-              and joined the String Orchestra CCA, played the violin. When
-              COVID-19 struck, and Singapore fell into a{" "}
+              and joined the String Orchestra CCA, and played the violin. When
+              COVID-19 struck, Singapore fell into a{" "}
               <span className="text-amber-500">circut breaker lockdown</span>,
               where I was forced to stay at home.
             </p>
             <p>
               This allowed me to{" "}
-              <span className="text-amber-500">self-learn programming</span>. As
-              I already had prior experience with Python, I was able to pick up{" "}
+              <span className="text-amber-500">teach myself programming</span>.
+              As I already had prior experience with Python and Scratch, I was
+              able to pick up{" "}
               <span className="text-amber-500">web development</span> quickly. I
               started to learn how to make websites, and I started to{" "}
               <span className="text-amber-500">make my own projects</span>.

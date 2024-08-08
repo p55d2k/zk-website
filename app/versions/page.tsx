@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const VersionPage = () => {
   return (
-    <div className="flex flex-col divide-y-2 divide-slate-700 px-4 sm:px-6 md:px-10 lg:px-14 pb-12">
+    <div className="flex flex-col divide-y-2 divide-slate-700 px-4 sm:px-6 md:px-10 lg:px-14 !pt-2 pb-12">
       <PageHeader text="Back" goBack className="pt-5" />
       <div className="flex flex-col w-full" id="version">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white text-center p-4 md:p-8">

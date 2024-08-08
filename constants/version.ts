@@ -15,6 +15,13 @@ export interface Version {
 export const versions: Version[] = [
   versionData,
   {
+    version: "0.1.6",
+    lastUpdated: "12/5/24",
+    commit:
+      "https://github.com/p55d2k/zk-website/commit/d494a6d96a1be7719277c66e0310585e84bb8b4a",
+    link: "https://a2d8abcb.zk-website-cwo.pages.dev/",
+  },
+  {
     version: "0.1.5d",
     lastUpdated: "24/4/24",
     commit:

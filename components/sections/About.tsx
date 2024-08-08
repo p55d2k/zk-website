@@ -48,12 +48,12 @@ const About = () => {
               I am <span className="text-amber-500">Wan Zhi Kai</span>, a
               Singaporean software engineer, specialised in frontend
               development. I am currently a high school student at{" "}
-              <span className="text-amber-500">Hwa Chong Institution</span>, and
+              <span className="text-amber-500">Hwa Chong Institution</span> and
               I am {new Date().getFullYear() - 2010} years old this year! 🎉
             </p>{" "}
             <p>
-              I have self-taught programming since I was 5. I am passionate
-              about building{" "}
+              I have been self-taught in programming since I was 5 years old. I
+              am passionate about building{" "}
               <span className="text-amber-500">
                 beautiful, functional, and intuitive
               </span>{" "}
@@ -69,7 +69,7 @@ const About = () => {
             <p>
               I am also fluent in{" "}
               <span className="text-amber-500">English</span>,{" "}
-              <span className="text-amber-500">Chinese</span>, and am learning{" "}
+              <span className="text-amber-500">Chinese</span>, but I'm learning{" "}
               <span className="text-amber-500">
                 Bahasa Indonesia (Indonesian)
               </span>

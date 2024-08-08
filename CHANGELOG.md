@@ -1,5 +1,11 @@
 # zk-website CHANGELOG
 
+### v0.1.6a - 8/8/2024
+
+- edited story
+- changed header to only have slate background on homepage, and turn black on other pages
+- made animations for 'github' and 'live website' links on project pages animate on group hover
+
 ### v0.1.6 - 12/5/2024
 
 - made versions page header centered
