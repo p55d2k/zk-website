@@ -69,7 +69,8 @@ const About = () => {
             <p>
               I am also fluent in{" "}
               <span className="text-amber-500">English</span>,{" "}
-              <span className="text-amber-500">Chinese</span>, but I'm learning{" "}
+              <span className="text-amber-500">Chinese</span>, but I&apos;m
+              learning{" "}
               <span className="text-amber-500">
                 Bahasa Indonesia (Indonesian)
               </span>

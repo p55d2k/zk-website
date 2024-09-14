@@ -43,7 +43,7 @@ const Hero = () => {
         </span>
         <span
           id="heroTitle"
-          className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text text-7xl sm:text-[150px] md:text-[180px] lg:text-[240px] leading-[1] font-extrabold text-center opacity-0 -translate-y-80"
+          className="shiny-text text-7xl sm:text-[150px] md:text-[180px] lg:text-[240px] leading-[1] font-extrabold text-center opacity-0 -translate-y-80"
         >
           zhi kai
         </span>

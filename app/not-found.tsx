@@ -14,7 +14,7 @@ const NotFoundPage = () => {
         />
       </div>
       <div className="flex flex-col space-y-3">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold shiny-text">
           404
         </h1>
         <p className="text-lg">

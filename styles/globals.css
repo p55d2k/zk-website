@@ -23,3 +23,7 @@ body {
 .card {
   @apply bg-slate-900 border-2 border-transparent hover:border-slate-700 cursor-pointer transition-all duration-200 ease-in-out;
 }
+
+.shiny-text {
+  @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text;
+}

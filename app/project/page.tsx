@@ -36,7 +36,7 @@ const ProjectListing = () => {
       <PageHeader text="Back to Projects" redirectUrl="/#projects" />
       <div className="flex flex-col space-y-8 py-5">
         <div className="flex flex-col">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text pb-1">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold shiny-text pb-1">
             <TypeAnimation
               sequence={["Projects", 3000, "作品展示", 3000]}
               speed={50}
@@ -50,7 +50,7 @@ const ProjectListing = () => {
             <input
               type="text"
               placeholder="Search"
-              className="button p-2 border-2 !bg-slate-600 !hover:bg-slate-700 border-slate-700 outline-none !text-left w-full md:w-[80%]"
+              className="button cursor-text p-2 border-2 !bg-slate-600 !hover:bg-slate-700 border-slate-700 outline-none !text-left w-full md:w-[80%]"
               onChange={(e) => setSearchTerm(e.target.value)}
               value={searchTerm}
             />

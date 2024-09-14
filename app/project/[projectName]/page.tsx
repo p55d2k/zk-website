@@ -60,7 +60,7 @@ const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
         <div className="flex flex-col h-full w-full divide-y-2 divide-slate-700">
           <div className="flex flex-col pb-4">
             {project?.name && (
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-opacity-0 text-white bg-clip-text pb-2">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold shiny-text pb-2">
                 <TypeAnimation
                   sequence={[500, project?.name]}
                   speed={50}

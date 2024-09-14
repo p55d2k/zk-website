@@ -1,5 +1,4 @@
 import { IconType } from "react-icons";
-import { MdOutlineMailOutline } from "react-icons/md";
 import {
   FaGithub,
   FaInstagram,
@@ -9,10 +8,11 @@ import {
   FaDiscord,
   FaUnity,
   FaSpotify,
+  FaFacebook,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandFiverr, TbBrandLeetcode } from "react-icons/tb";
-import { SiCodeforces, SiCodewars } from "react-icons/si";
+import { SiCodeforces } from "react-icons/si";
 import { PiCatDuotone } from "react-icons/pi";
 
 export interface ContactMethod {
@@ -24,15 +24,15 @@ export interface ContactMethod {
 
 const contactMethods: ContactMethod[] = [
   {
-    name: "Email",
+    name: "Facebook",
     description:
-      "My primary contact method - email! You can contact it anytime.",
-    icon: MdOutlineMailOutline,
-    link: "mailto:peanutandscuffy1@gmail.com",
+      "Here's my Facebook profile. I don't use it much, but you can still message me there.",
+    icon: FaFacebook,
+    link: "https://www.facebook.com/profile.php?id=61565879248754",
   },
   {
     name: "Telegram",
-    description: "I use Telegram on a daily basis! You can contact me there.",
+    description: "I use Telegram regularly! You can contact me there.",
     icon: FaTelegram,
     link: "https://t.me/p55d2k",
   },

@@ -6,7 +6,6 @@ import {
   FaGithub,
   FaCloudflare,
   FaNodeJs,
-  FaRegUserCircle,
 } from "react-icons/fa";
 import {
   TbBrandReactNative,
@@ -36,6 +35,7 @@ import {
   SiMui,
   SiAstro,
   SiDocusaurus,
+  SiClerk,
 } from "react-icons/si";
 import { GoCopilot } from "react-icons/go";
 import { RiOpenaiFill } from "react-icons/ri";
@@ -135,7 +135,7 @@ export const MongoDB = {
 };
 export const Clerk = {
   name: "Clerk",
-  icon: FaRegUserCircle,
+  icon: SiClerk,
   link: "https://clerk.dev/",
 };
 
