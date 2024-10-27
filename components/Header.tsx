@@ -21,19 +21,21 @@ const Header = () => {
             unoptimized
             src="/favicon.ico"
             alt=""
-            width={40}
-            height={40}
-            className="block sm:hidden"
+            width={35}
+            height={35}
+            className="block md:hidden"
           />
+
           <Image
             unoptimized
             src="/favicon.ico"
             alt=""
             width={50}
             height={60}
-            className="hidden sm:block"
+            className="hidden md:block"
           />
         </Link>
+
         <div className="hidden sm:flex sm:flex-row sm:space-x-4 items-center justify-center">
           <Link href={"/#about"} className="header-link">
             About
@@ -43,6 +45,9 @@ const Header = () => {
           </Link>
           <Link href={"/#projects"} className="header-link">
             Projects
+          </Link>
+          <Link href={"/#achievements"} className="header-link">
+            Achievements
           </Link>
           <Link href={"/#contact"} className="header-link">
             Contact

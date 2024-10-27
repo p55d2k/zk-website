@@ -9,7 +9,7 @@ interface ExperienceCardProps {
 const ExperienceCard = ({ exp }: ExperienceCardProps) => {
   return (
     <Link
-      className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 divide-y-2 md:divide-y-0 md:divide-x-2 divide-slate-700 p-12 card items-center justify-center"
+      className="flex flex-col md:flex-row gap-3 divide-y-2 md:divide-y-0 md:divide-x-2 divide-slate-700 p-12 card items-center justify-center"
       href={exp.link}
       target="_blank"
     >

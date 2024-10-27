@@ -105,7 +105,7 @@ export const otherContactMethods: ContactMethod[] = [
     name: "Spotify",
     icon: FaSpotify,
     // link: "https://www.codewars.com/users/p55d2k",
-    link: "https://open.spotify.com/playlist/5UOkmsZSQi9uZEEQOrvew2?si=54c0f7dc065f4027",
+    link: "https://open.spotify.com/user/31v6vruoaocj7hthypf7xwbxz7nq",
   },
 ];
 

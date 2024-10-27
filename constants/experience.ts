@@ -1,4 +1,4 @@
-const experiences = [
+const experiences: Experience[] = [
   {
     start: "Nov 2023",
     end: "Dec 2023",
@@ -6,7 +6,7 @@ const experiences = [
     companyName: "Xcidic",
     position: "Frontend Developer Intern",
     location: "Remote/Singapore",
-    logo: "/imgs/xcidic.svg",
+    logo: "/imgs/experience/xcidic.svg",
     link: "https://xcidic.com",
     description:
       "I was really excited for my internship, mainly to gain experiences while meeting new people. Worked on the frontend of another company's website using Next.js and Tailwind CSS.",

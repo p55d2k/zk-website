@@ -15,9 +15,7 @@ const Experience = () => {
         </SectionHeader>
         <div
           className={`grid grid-cols-1 ${
-            experiences.length <= 1
-              ? "xl:grid-cols-1"
-              : "xl:grid-cols-2"
+            experiences.length <= 1 ? "xl:grid-cols-1" : "xl:grid-cols-2"
           } gap-4`}
         >
           {experiences.map((exp, index) => (

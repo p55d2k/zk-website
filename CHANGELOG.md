@@ -1,5 +1,10 @@
 # zk-website CHANGELOG
 
+### v0.1.7 - 27/10/2024
+
+- added 'achievements' section
+- added 'achievements' page
+
 ### v0.1.6a - 8/8/2024
 
 - edited story

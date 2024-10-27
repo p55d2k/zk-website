@@ -13,7 +13,7 @@ const Projects = () => {
         <SectionHeader
           sequence={["my project showcase", 4000, "作品展示", 4000]}
         >
-          what have i <span className="text-blue-500">built</span>?
+          what have i <span className="text-cyan-500">built</span>?
         </SectionHeader>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
           {projects.slice(0, 3).map((proj, index) => (
