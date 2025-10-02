@@ -8,6 +8,7 @@ import { TfiNewWindow } from "react-icons/tfi";
 import { notFound } from "next/navigation";
 import { TypeAnimation } from "react-type-animation";
 
+// This page is intended to run on edge runtime
 interface ProjectPageProps {
   params: Promise<{
     projectName: string;
