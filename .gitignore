@@ -48,3 +48,5 @@ checklist.*
 # any vscode files should be ignored
 .vscode
 
+# open-next
+.open-next

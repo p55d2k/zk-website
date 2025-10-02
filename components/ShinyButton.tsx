@@ -5,9 +5,7 @@ const ShinyButton = ({ text }: { text: string }) => {
   return (
     <motion.button
       className="px-6 py-2 relative radial-gradient w-full"
-      // @ts-expect-error
       initial={{ "--x": "100%", scale: 1 }}
-      // @ts-expect-error
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.97 }}
       transition={{
