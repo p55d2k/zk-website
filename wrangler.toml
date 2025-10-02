@@ -1,5 +1,6 @@
 name = "zk-website"
 compatibility_date = "2024-10-02"
+pages_build_output_dir = ".vercel/output/static"
 
 [build]
 command = "bun run build"

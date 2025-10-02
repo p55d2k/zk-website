@@ -1,24 +1,21 @@
-"use client";
-
 import PageHeader from "@/components/PageHeader";
 import { Project, getProject } from "@/constants/projects";
 
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 import { TfiNewWindow } from "react-icons/tfi";
-import { notFound, useRouter } from "next/navigation";
+import { notFound } from "next/navigation";
 import { TypeAnimation } from "react-type-animation";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     projectName: string;
-  };
+  }>;
 }
 
-const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
-  const router = useRouter();
+const ProjectPage = async ({ params }: ProjectPageProps) => {
+  const { projectName } = await params;
   const project = getProject(projectName);
 
   if (!project) {
