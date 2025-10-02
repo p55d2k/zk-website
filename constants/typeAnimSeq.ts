@@ -6,11 +6,7 @@ export const typeAnimationSequence = [
   1500,
   "game developer",
   1500,
-  "python programmer",
+  "canoeist and violinist",
   1500,
-  "canoeist",
-  1500,
-  "violinist",
-  1500,
-  "video editor",
+  "student leader",
 ];

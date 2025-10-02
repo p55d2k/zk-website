@@ -16,7 +16,7 @@ const Story = () => {
     >
       <SubsectionHeader
         sequence={["the story of my life", 4000, "我的故事", 4000]}
-        subtitle=""
+        subtitle="a short autobiography"
         className="!pb-2"
       />
       <div
@@ -26,41 +26,15 @@ const Story = () => {
             : "flex-row space-x-6 lg:space-x-14 xl:space-x-20"
         } items-center justify-center h-full pt-5`}
       >
-        <div
-          className={`${
-            flexSection ? "hidden" : "flex"
-          } flex-col space-y-20 items-center justify-center`}
-        >
-          <div className="flex flex-col space-y-1 items-center justify-center">
-            <Image
-              unoptimized
-              src="/imgs/zk4.jpeg"
-              alt=""
-              width={300}
-              height={500}
-            />
-          </div>
-          <div className="flex flex-col space-y-1 items-center justify-center">
-            <Image
-              unoptimized
-              src="/imgs/zk3.jpeg"
-              alt=""
-              width={300}
-              height={500}
-            />
-          </div>
-        </div>
-        <div
-          className={`flex-col space-y-1 ${flexSection ? "flex" : "hidden"}`}
-        >
-          <Image
-            unoptimized
-            src="/imgs/zk4.jpeg"
-            alt=""
-            width={400}
-            height={500}
-          />
-        </div>
+        <Image
+          unoptimized
+          src="/imgs/zk1.png"
+          alt=""
+          width={450}
+          height={500}
+          className="flex"
+        />
+
         <div
           className={`flex flex-col space-y-1 ${
             flexSection
@@ -71,65 +45,51 @@ const Story = () => {
           <h3 className="text-xl md:text-2xl lg:text-3xl text-center md:text-left">
             Who am I?
           </h3>
-          <div className="flex flex-col space-y-3 text-sm md:text-base text-left md:text-left font-light pt-2">
+          <div className="flex flex-col space-y-3 text-sm lg:text-base text-left md:text-left font-light pt-2">
             <p>
-              I was born in 2010 in{" "}
-              <span className="text-amber-500">London, United Kingdom</span>. My
-              family moved back to Singapore when I was{" "}
-              <span className="text-amber-500">2</span> years old. I grew up in
-              a family of <span className="text-amber-500">4</span>, with my
-              parents, my younger brother, and me.
+              I&apos;m a{" "}
+              <span className="text-amber-500">student developer</span> based in{" "}
+              <span className="text-amber-500">Singapore</span> with a passion
+              for{" "}
+              <span className="text-amber-500">
+                web development, programming, and technology
+              </span>
+              . My journey began during Singapore&apos;s 2020 circuit breaker,
+              where I had the opportunity to explore coding beyond the
+              classroom.
             </p>
             <p>
-              I grew up in Singapore, and I was able to learn{" "}
-              <span className="text-amber-500">both English and Chinese</span>.
-              With my parents, I spoke English, and with my grandparents, I
-              spoke Chinese.
+              I started with{" "}
+              <span className="text-amber-500">Scratch and Python</span>, and
+              soon transitioned into web development. Since then, I&apos;ve
+              built several{" "}
+              <span className="text-amber-500">personal projects</span> and
+              continually refined my{" "}
+              <span className="text-amber-500">frontend skills</span>.
             </p>
             <p>
-              I went to{" "}
-              <span className="text-amber-500">Nanyang Primary School</span>,
-              and joined the String Orchestra CCA, and played the violin. When
-              COVID-19 struck, Singapore fell into a{" "}
-              <span className="text-amber-500">circut breaker lockdown</span>,
-              where I was forced to stay at home.
+              After completing the PSLE, I interned at{" "}
+              <span className="text-amber-500">Xcidic</span> as a{" "}
+              <span className="text-amber-500">Frontend Developer</span>, where
+              I worked on{" "}
+              <span className="text-amber-500">production-level web apps</span>{" "}
+              and{" "}
+              <span className="text-amber-500">collaborated with a team</span>{" "}
+              of developers. This experience gave me{" "}
+              <span className="text-amber-500">practical exposure</span> to
+              real-world development and helped solidify my technical
+              foundation.
             </p>
             <p>
-              This allowed me to{" "}
-              <span className="text-amber-500">teach myself programming</span>.
-              As I already had prior experience with Python and Scratch, I was
-              able to pick up{" "}
-              <span className="text-amber-500">web development</span> quickly. I
-              started to learn how to make websites, and I started to{" "}
-              <span className="text-amber-500">make my own projects</span>.
-            </p>
-            <p>
-              After <span className="text-amber-500">PSLE</span> (the Primary
-              School Leaving Examination, an examination Primary 6s take in
-              Singapore to decide their secondary school), I had lot of time,
-              and joined <span className="text-amber-500">Xcidic</span> as a{" "}
-              <span className="text-amber-500">Frontend Developer Intern</span>.
-              I was able to learn a lot of new things, and meet a lot of new
-              people of similar interests as well.
-            </p>
-            <p>
-              Furthermore, I also had time to learn new sports. I picked up{" "}
-              <span className="text-amber-500">Canoeing</span>, was able to
-              learn how to paddle, and I was able to go for competitions.
-            </p>
-            <p>
-              When the results for PSLE came out, I was accepted into{" "}
-              <span className="text-amber-500">Hwa Chong Institution</span>, and{" "}
-              {new Date().getFullYear() > 2028
-                ? "I have already left the school."
-                : "I am still studying there now!"}{" "}
-              I was then accepted into the school&apos;s{" "}
-              <span className="text-amber-500">Infocomm Club</span>, where I
-              further developed my programming skills.
+              I&apos;m currently a student at{" "}
+              <span className="text-amber-500">Hwa Chong Institution</span>,
+              where I&apos;m also a member of the Infocomm Club, actively
+              participating in the club&apos;s programming projects.
             </p>
             <p className="text-blue-500">
-              Now, I am proud to be who I am, and I am excited to see what the
-              future holds for me.
+              I&apos;m always looking to grow as a person. I&apos;m excited
+              about the future — and all the projects and people I&apos;ll meet
+              along the way.
             </p>
           </div>
         </div>

@@ -1,5 +1,17 @@
 # zk-website CHANGELOG
 
+### v0.1.8 - 02/10/2025
+
+- major content rewrite: updated About, Story, and Hobbies sections for professionalism and conciseness
+- achievements overhaul: added new 2025 DSTA YDSP Scholarship, restructured with sideAchievements array, removed outdated entries (e.g., old awards, multiple AAA)
+- projects cleanup: removed old tutorial-based projects (ZK Three Portfolio, Cinewave, ZK-GPT3 Website, ZKGericht)
+- UI enhancements: integrated custom fonts (Satoshi for headers, Inter for body), updated card borders and colors (red titles, slate borders), improved accessibility (buttons over divs)
+- asset updates: switched hero video to WebM format with preload/poster, added new images (PNG profiles, DSTA achievement), added custom fonts directory, deleted unused JPEG images
+- structural changes: removed versions page, updated footer to display last updated instead of versions link, optimized project page rendering with notFound() and direct data fetching
+- config updates: added turbopack to dev/build scripts, updated tsconfig target to ES2017, added CSS radius variable
+- performance improvements: memoized achievements data, simplified component logic and removed unnecessary effects
+- added google search console verification file
+
 ### v0.1.7 - 27/10/2024
 
 - added 'achievements' section

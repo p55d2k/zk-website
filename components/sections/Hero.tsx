@@ -22,10 +22,12 @@ const Hero = () => {
     <div className="flex flex-col items-center justify-center h-[90vh] pb-20 md:pb-0">
       <div className="absolute left-0 right-0 bottom-0 w-screen top-[10vh] h-[90vh]">
         <video
-          src="/hero.mp4"
+          src="/hero.webm"
           autoPlay
           loop
           muted
+          preload="auto"
+          poster="/hero.jpeg"
           className="object-cover w-screen h-full pointer-events-none opacity-90 hidden md:flex"
         />
 

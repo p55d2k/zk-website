@@ -17,7 +17,7 @@ const Hobbies = () => {
     >
       <SubsectionHeader
         sequence={["my hobbies", 4000, "我的爱好", 4000]}
-        subtitle=""
+        subtitle="what i enjoy doing!"
         className="!pb-2"
       />
       <div
@@ -33,33 +33,23 @@ const Hobbies = () => {
           </h3>
           <div className="flex flex-col space-y-3 text-sm md:text-base text-left md:text-left font-light pt-2">
             <p>
-              Ever since I was young, I always enjoyed{" "}
-              <span className="text-amber-500">mobile gaming</span>. I also
-              enjoy{" "}
-              <span className="text-amber-500">reading fiction novels 📖</span>.
+              Beyond software development, I&apos;m an avid canoeist and have
+              been training and competing for the past three years. I also hold
+              a Grade 8 certification in violin, having played since I was
+              young, and continue to enjoy performing classical music.
             </p>
             <p>
-              I definitely also enjoy{" "}
-              <span className="text-amber-500">canoeing</span>. So far, I have
-              been paddling for {new Date().getFullYear() - 2022} years, and
-              continue to train weekly at{" "}
-              <span className="text-amber-500">Macritchie Reservoir</span> in
-              Singapore.
-            </p>
-            <p>
-              Not only that, I also can play the{" "}
-              <span className="text-amber-500">violin</span>. I have achieved
-              grade 8, and have been playing for{" "}
-              {new Date().getFullYear() - 2014} years, and definitely continue
-              to enjoy playing classical pieces.
+              In my spare time, I enjoy reading fiction and exploring mobile
+              game design and mechanics, which often inspires the UX side of my
+              web projects.
             </p>
           </div>
         </div>
         <div className="flex flex-col space-y-1">
           <Image
-            src="/imgs/zk1.jpeg"
+            src="/imgs/zk3.jpeg"
             alt=""
-            width={400}
+            width={300}
             height={500}
             unoptimized
           />

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/styles/globals.css";
+
+import { interFont } from "@/constants/fonts";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Zhi Kai • Software Engineer",
@@ -23,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + " bg-black"}>
+      <body className={interFont.className + " bg-black"}>
         <Header />
         <div className="h-full min-h-[80vh] text-white w-full">{children}</div>
         <Footer />

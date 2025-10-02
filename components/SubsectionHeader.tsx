@@ -1,3 +1,5 @@
+import { satoshiFont } from "@/constants/fonts";
+
 import { TypeAnimation } from "react-type-animation";
 
 interface SubsectionHeaderProps {
@@ -9,7 +11,7 @@ interface SubsectionHeaderProps {
 const SubsectionHeader = ({
   subtitle,
   sequence,
-  className
+  className,
 }: SubsectionHeaderProps) => {
   return (
     <div className="flex flex-col">
@@ -20,7 +22,9 @@ const SubsectionHeader = ({
             : "text-3xl sm:text-4xl md:text-5xl"
         } lg:text-5xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-opacity-0 ${
           subtitle && "pb-3"
-        } text-white bg-clip-text text-center ${className}`}
+        } text-white bg-clip-text text-center ${className} ${
+          satoshiFont.className
+        }`}
       >
         <TypeAnimation
           sequence={sequence}
@@ -30,7 +34,9 @@ const SubsectionHeader = ({
         />
       </div>
       {subtitle && (
-        <h1 className="text-xl md:text-3xl font-thin text-center">
+        <h1
+          className={`text-xl md:text-3xl font-thin text-center ${satoshiFont.className}`}
+        >
           {subtitle}
         </h1>
       )}

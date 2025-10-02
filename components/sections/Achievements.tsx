@@ -1,6 +1,6 @@
 "use client";
 
-import achievements from "@/constants/achievements";
+import { achievements } from "@/constants/achievements";
 
 import Link from "next/link";
 
@@ -27,10 +27,10 @@ const Achievements = () => {
             .filter((achievement) => {
               return achievement.year === new Date().getFullYear();
             })
-            .map((achievement, index) => {
-              if (index > 2) return;
-              return <AchievementCard achievement={achievement} key={index} />;
-            })}
+            .slice(0, 3)
+            .map((achievement, index) => (
+              <AchievementCard achievement={achievement} key={index} />
+            ))}
         </div>
         <div className="flex flex-row w-full justify-end items-center">
           <Link href="/achievements">

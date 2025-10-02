@@ -28,7 +28,7 @@ const About = () => {
       >
         <Image
           unoptimized
-          src="/imgs/zk2.jpeg"
+          src="/imgs/zk2.png"
           alt=""
           width={450}
           height={450}
@@ -41,40 +41,48 @@ const About = () => {
           }`}
         >
           <h3 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-center md:text-left">
-            Hi there! 👋
+            Hello there! 👋
           </h3>
           <div className="flex flex-col space-y-3 text-sm md:text-base xl:text-lg text-left font-light pt-2">
             <p>
-              I am <span className="text-amber-500">Wan Zhi Kai</span>, a
-              Singaporean software engineer, specialised in frontend
-              development. I am currently a high school student at{" "}
-              <span className="text-amber-500">Hwa Chong Institution</span> and
-              I am {new Date().getFullYear() - 2010} years old this year! 🎉
-            </p>{" "}
-            <p>
-              I have been self-taught in programming since I was 5 years old. I
-              am passionate about building{" "}
+              I&apos;m <span className="text-amber-500">Zhi Kai</span>, a
+              Singapore-based frontend developer, with a strong focus on
+              building{" "}
               <span className="text-amber-500">
-                beautiful, functional, and intuitive
+                beautiful, responsive, and user-friendly
               </span>{" "}
-              web applications.
+              web applications. I&apos;ve been programming since I was 5, and am
+              currently a high school student at{" "}
+              <span className="text-amber-500">Hwa Chong Institution</span>.
             </p>
             <p>
-              I mainly use technologies like{" "}
+              Over the years, I&apos;ve developed a deep interest in{" "}
               <span className="text-amber-500">
-                TypeScript, ReactJS, NextJS, and TailwindCSS
-              </span>{" "}
-              in my projects, including this website! 🚀
-            </p>
-            <p>
-              I am also fluent in{" "}
-              <span className="text-amber-500">English</span>,{" "}
-              <span className="text-amber-500">Chinese</span>, but I&apos;m
-              learning{" "}
-              <span className="text-amber-500">
-                Bahasa Indonesia (Indonesian)
+                frontend technologies and modern UI frameworks
               </span>
-              !
+              . I primarily work with{" "}
+              <span className="text-amber-500">
+                TypeScript, React, Next.js, and Tailwind CSS
+              </span>{" "}
+              — including for this site you&apos;re viewing.
+            </p>
+            <p>
+              Beyond coding, I&apos;m fluent in{" "}
+              <span className="text-amber-500">English </span> and{" "}
+              <span className="text-amber-500">Mandarin Chinese</span>, and
+              I&apos;m currently learning{" "}
+              <span className="text-amber-500">Bahasa Indonesia</span>!
+            </p>
+            <p>
+              I enjoy turning ideas into{" "}
+              <span className="text-amber-500">
+                polished, performant digital experiences
+              </span>{" "}
+              — and I&apos;m always looking to{" "}
+              <span className="text-amber-500">
+                learn more, build more, and grow as a developer
+              </span>
+              .
             </p>
             <Link href="/story">
               <ShinyButton text="read more" />

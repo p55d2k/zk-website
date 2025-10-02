@@ -19,26 +19,30 @@ const ExperienceCard = ({ exp }: ExperienceCardProps) => {
         alt={exp.companyName}
         width={300}
         height={300}
-        className="bg-white items-center"
+        className="bg-white border-2 border-slate-700 items-center"
       />
-      <div className="flex flex-col space-y-2 divide-y-2 divide-slate-700 md:pl-4">
+
+      <div className="flex flex-col space-y-2 md:pl-4">
         <div className="flex flex-col space-y-2 items-center">
-          <h1 className="text-center font-extrabold text-4xl pt-3 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-opacity-0 pb-3 text-white bg-clip-text hover:underline transition-all duration-300 ease-in-out">
+          <h1 className="text-center font-extrabold text-4xl pt-3 text-red-500">
             {exp.companyName}
           </h1>
-          <p className="text-center text-sm text-amber-500">
-            {exp.start} - {exp.end} | {exp.time}
-          </p>
+
+          <div className="flex flex-col">
+            <p className="text-center text-sm text-amber-500">
+              {exp.start} - {exp.end} <span className="text-white">for</span>{" "}
+              {exp.time}
+            </p>
+            <p className="text-center text-sm">
+              as a <span className="text-amber-500">{exp.position}</span>
+            </p>
+            <p className="text-center text-sm">
+              in <span className="text-amber-500">{exp.location}</span>
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col pt-4 text-center text-sm">
-          <p>
-            as a <span className="text-amber-500">{exp.position}</span>
-          </p>
-          <p>
-            in <span className="text-amber-500">{exp.location}</span>
-          </p>
-        </div>
-        <div className="pt-4 text-center text-sm max-w-96">
+
+        <div className="pt-2 text-center text-sm max-w-96">
           {exp.description}
         </div>
       </div>

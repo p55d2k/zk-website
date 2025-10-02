@@ -5,7 +5,7 @@ const experiences: Experience[] = [
     time: "2 months",
     companyName: "Xcidic",
     position: "Frontend Developer Intern",
-    location: "Remote/Singapore",
+    location: "Singapore/Remote",
     logo: "/imgs/experience/xcidic.svg",
     link: "https://xcidic.com",
     description:

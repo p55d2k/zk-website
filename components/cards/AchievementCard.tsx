@@ -15,9 +15,9 @@ const AchievementCard = ({ achievement, whiteText }: AchievementCardProps) => {
         alt={achievement.name}
         width={150}
         height={150}
-        className="bg-white items-center"
+        className="bg-white border-2 border-slate-700 items-center"
       />
-      <h1 className="text-center font-extrabold text-4xl shiny-text transition-all duration-300 ease-in-out pt-2 w-full">
+      <h1 className="text-center font-extrabold text-4xl text-red-500 transition-all duration-300 ease-in-out pt-2 w-full">
         {achievement.name}
       </h1>
       <p className="text-center font-bold text-lg lg:text-xl text-amber-500 w-full pt-2">

@@ -32,7 +32,7 @@ const PageHeader = ({
           </p>
         </Link>
       ) : (
-        <div
+        <button
           onClick={() => router.back()}
           className={`flex flex-row space-x-2 pb-5 text-amber-500 items-center md:text-xl cursor-pointer ${className}`}
         >
@@ -40,7 +40,7 @@ const PageHeader = ({
           <p className="hover:pl-2 transition-all duration-200 ease-in-out">
             {text}
           </p>
-        </div>
+        </button>
       )}
     </>
   );

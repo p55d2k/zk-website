@@ -3,8 +3,8 @@
   "version": "0.1.6",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,10 +13,10 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
-    "caniuse-lite": "^1.0.30001672",
+    "caniuse-lite": "^1.0.30001718",
     "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
-    "next": "latest",
+    "next": "^15.3.2",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",

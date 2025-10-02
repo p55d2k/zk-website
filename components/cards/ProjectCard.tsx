@@ -20,9 +20,9 @@ const ProjectCard = ({ proj, whiteText }: ProjectCardProps) => {
           alt={proj.name}
           width={400}
           height={200}
-          className="bg-white border-2 border-white w-full max-h-[300px]"
+          className="bg-white border border-slate-700 w-full max-h-[300px]"
         />
-        <div className="text-center bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-opacity-0 pb-3 text-white bg-clip-text font-extrabold text-4xl pt-3">
+        <div className="text-center bg-gradient-to-r pb-3 text-red-500 font-extrabold text-4xl pt-3">
           {proj.name}
         </div>
         <p className={`text-center text-sm ${!whiteText && "text-amber-500"}`}>

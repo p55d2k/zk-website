@@ -107,17 +107,6 @@ const projects: Project[] = [
     screenshot: "/imgs/screenshots/pokedex.jpeg",
   },
   {
-    name: "ZK Three Portfolio",
-    description:
-      "A ThreeJS portfolio website I learnt from a video tutorial on YouTube!",
-    detailedDescription:
-      "I actually watched a video tutorial on how to make a ThreeJS portfolio website (https://www.youtube.com/watch?v=0fYi8SGA20k by JavaScript Mastery), and I thought that it would be a good idea to make a project like that. I learned a lot about how to use ThreeJS and how to use it with React while making this project. I also learned how to use React-Three-Fiber and how to use it with ThreeJS.",
-    techStack: [NextJS, MUI, Redux, CSS3],
-    github: "https://github.com/p55d2k/zk-threejs-portfolio",
-    live: "https://zkthreeportfolio.vercel.app",
-    screenshot: "/imgs/screenshots/threeportfolio.jpeg",
-  },
-  {
     name: "ZK Astro Blog",
     description: "The default Astro blog - but with my own customizations!",
     detailedDescription:
@@ -126,38 +115,6 @@ const projects: Project[] = [
     github: "https://github.com/p55d2k/ec3-astrojs-blog/",
     live: "https://zkastroblog.vercel.app",
     screenshot: "/imgs/screenshots/astroblog.jpeg",
-  },
-  {
-    name: "Cinewave",
-    description:
-      "My first React App! I learnt how to make it from a video tutorial",
-    detailedDescription:
-      "This was my first ReactJS website, when I was introduced to React in 2023 by my friend. I watched a video tutorial on learning ReactJS (https://www.youtube.com/watch?v=b9eMGE7QtTk by JavaScript Mastery), and learnt how to create a movie website from this. I also had linked TMDB to it. I found this website rather interesting to create as it was my first time using an API, and I learned a lot about how to use APIs while making this project. What I learnt was how to use ReactJS, and from then on, I started to learn more about Javascript frameworks.",
-    techStack: [ReactJS, CSS3, JavaScript],
-    github: "https://github.com/p55d2k/cinewave",
-    live: "https://zkcinewave.vercel.app",
-    screenshot: "/imgs/screenshots/cinewave.jpeg",
-  },
-  {
-    name: "ZK-GPT3 Website",
-    description:
-      "A website for a GPT-3 website demo that I made for fun! I learnt it from a video tutorial.",
-    detailedDescription:
-      "This was my second ReactJS website, after CineWave. I watched a video tutorial on learning ReactJS (but can't find the link anymore), and learnt how to create this GPT-3 website demo clone from this.",
-    techStack: [ReactJS, CSS3, JavaScript],
-    github: "https://github.com/p55d2k/gpt-3-website-clone",
-    live: "https://zkgpt3.vercel.app/",
-    screenshot: "/imgs/screenshots/gpt3.jpeg",
-  },
-  {
-    name: "ZKGericht",
-    description:
-      "A website for a restaurant that I made for fun! I learnt it from the same video tutorial as the ZK-GPT3 Website.",
-    detailedDescription:
-      "This was my third ReactJS website, after GPT3 Website. I watched the same video tutorial on learning ReactJS, and learnt how to create a restaurant website from this. What I learnt was how to use ReactJS, and from then on, I began to learn about NextJS and began transitioning to NextJS as I found it more powerful.",
-    techStack: [ReactJS, CSS3, JavaScript],
-    live: "https://zkgericht.vercel.app/",
-    screenshot: "/imgs/screenshots/zkgericht.jpeg",
   },
 ];
 

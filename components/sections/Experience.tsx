@@ -9,7 +9,7 @@ const Experience = () => {
     <div className="mt-16 flex flex-col" id="experience">
       <div className="flex flex-col text-white px-8 sm:px-16 md:px-20 space-y-6 items-center">
         <SectionHeader
-          sequence={["what have i done in work?", 4000, "我的工作经验", 4000]}
+          sequence={["what i've done so far", 4000, "我的工作经验", 4000]}
         >
           my work <span className="text-green-500">experience</span>
         </SectionHeader>

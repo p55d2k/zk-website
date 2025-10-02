@@ -2,25 +2,36 @@
 
 import PageHeader from "@/components/PageHeader";
 import AchievementCard from "@/components/cards/AchievementCard";
-import achievements, { Achievement } from "@/constants/achievements";
+import {
+  achievements,
+  sideAchievements,
+  Achievement,
+} from "@/constants/achievements";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 const AchievementsPage = () => {
+  const combinedAchievements = useMemo(() => {
+    // Memoize combinedAchievements
+    return [...achievements, ...sideAchievements].sort(
+      (a, b) => b.year - a.year
+    );
+  }, []);
+
   const [achievementsToShow, setAchievementsToShow] =
-    useState<Achievement[]>(achievements);
+    useState<Achievement[]>(combinedAchievements);
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [yearFilter, setYearFilter] = useState<number | null>(null);
   const [years, setYears] = useState<number[]>([]);
 
   useEffect(() => {
-    const years = achievements.map((achievement) => achievement.year);
+    const years = combinedAchievements.map((achievement) => achievement.year);
     setYears(Array.from(new Set(years)));
-  }, []);
+  }, [combinedAchievements]);
 
   useEffect(() => {
-    let filteredAchievements = achievements.filter((achievement) => {
+    let filteredAchievements = combinedAchievements.filter((achievement) => {
       if (searchTerm === "") return true;
       return achievement.name
         .toLowerCase()
@@ -38,11 +49,11 @@ const AchievementsPage = () => {
       if (a.year === b.year) {
         return a.name.localeCompare(b.name);
       }
-      return a.year - b.year;
+      return b.year - a.year;
     });
 
     setAchievementsToShow(filteredAchievements);
-  }, [searchTerm, yearFilter]);
+  }, [searchTerm, yearFilter, combinedAchievements]);
 
   return (
     <div className="p-4 sm:p-6 md:p-10 lg:p-14 !pt-2 flex flex-col divide-y-2 divide-slate-700">

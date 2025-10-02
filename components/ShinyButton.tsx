@@ -4,7 +4,7 @@ import "@/styles/button.css";
 const ShinyButton = ({ text }: { text: string }) => {
   return (
     <motion.button
-      className="px-6 py-2 rounded-lg relative radial-gradient w-full"
+      className="px-6 py-2 relative radial-gradient w-full"
       // @ts-expect-error
       initial={{ "--x": "100%", scale: 1 }}
       // @ts-expect-error
@@ -28,7 +28,7 @@ const ShinyButton = ({ text }: { text: string }) => {
       <span className="text-neutral-100 tracking-wide font-light h-full w-full block relative linear-mask text-xl">
         {text}
       </span>
-      <span className="block absolute inset-0 rounded-md p-px linear-overlay" />
+      <span className="block absolute inset-0 p-px linear-overlay" />
     </motion.button>
   );
 };

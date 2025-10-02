@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { TfiNewWindow } from "react-icons/tfi";
-import { redirect } from "next/navigation";
+import { notFound, useRouter } from "next/navigation";
 import { TypeAnimation } from "react-type-animation";
 
 interface ProjectPageProps {
@@ -18,15 +18,12 @@ interface ProjectPageProps {
 }
 
 const ProjectPage = ({ params: { projectName } }: ProjectPageProps) => {
-  const [project, setProject] = useState<Project | undefined>(undefined);
+  const router = useRouter();
+  const project = getProject(projectName);
 
-  useEffect(() => {
-    const currentProject = getProject(projectName);
-    if (!currentProject) {
-      redirect("/404");
-    }
-    setProject(currentProject);
-  }, [projectName]);
+  if (!project) {
+    notFound();
+  }
 
   return (
     <div className="p-4 sm:p-6 md:p-10 lg:p-14 !pt-2 flex flex-col divide-y-2 divide-slate-700">

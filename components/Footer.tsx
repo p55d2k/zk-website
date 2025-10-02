@@ -1,4 +1,4 @@
-import versionData from "@/constants/version";
+import { versionData } from "@/constants/version";
 import Link from "next/link";
 
 const Footer = async () => {
@@ -45,13 +45,7 @@ const Footer = async () => {
           >
             Source Code
           </Link>{" "}
-          • v{versionData.version} •{" "}
-          <Link
-            href="/versions"
-            className="text-amber-500 hover:text-amber-300 transition-all ease-in-out duration-300"
-          >
-            Previous Versions
-          </Link>
+          • v{versionData.version} • {versionData.lastUpdated}
         </p>
       </div>
     </div>
