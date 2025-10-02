@@ -9,14 +9,16 @@ import { notFound } from "next/navigation";
 import { TypeAnimation } from "react-type-animation";
 
 // This page is intended to run on edge runtime
+export const runtime = "edge";
+
 interface ProjectPageProps {
-  params: Promise<{
+  params: {
     projectName: string;
-  }>;
+  };
 }
 
 const ProjectPage = async ({ params }: ProjectPageProps) => {
-  const { projectName } = await params;
+  const { projectName } = params;
   const project = getProject(projectName);
 
   if (!project) {
