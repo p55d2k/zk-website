@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import AnimatedTitle from "@/components/AnimatedTitle";
 import { Project, getProject } from "@/constants/projects";
 
 import Image from "next/image";
@@ -6,10 +7,6 @@ import Link from "next/link";
 
 import { TfiNewWindow } from "react-icons/tfi";
 import { notFound } from "next/navigation";
-import { TypeAnimation } from "react-type-animation";
-
-// This page is intended to run on edge runtime
-export const runtime = "edge";
 
 interface ProjectPageProps {
   params: Promise<{
@@ -58,11 +55,7 @@ const ProjectPage = async ({ params }: ProjectPageProps) => {
           <div className="flex flex-col pb-4">
             {project?.name && (
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold shiny-text pb-2">
-                <TypeAnimation
-                  sequence={[500, project?.name]}
-                  speed={50}
-                  repeat={1}
-                />
+                <AnimatedTitle text={project?.name} />
               </h1>
             )}
             <p className="text-sm sm:text-base md:text-lg">
@@ -102,3 +95,10 @@ const ProjectPage = async ({ params }: ProjectPageProps) => {
 };
 
 export default ProjectPage;
+
+export async function generateStaticParams() {
+  const projects = (await import("@/constants/projects")).default;
+  return projects.map((project) => ({
+    projectName: project.name.toLowerCase().replaceAll(" ", "_"),
+  }));
+}
