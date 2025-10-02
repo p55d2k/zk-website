@@ -12,13 +12,13 @@ import { TypeAnimation } from "react-type-animation";
 export const runtime = "edge";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     projectName: string;
-  };
+  }>;
 }
 
 const ProjectPage = async ({ params }: ProjectPageProps) => {
-  const { projectName } = params;
+  const { projectName } = await params;
   const project = getProject(projectName);
 
   if (!project) {
