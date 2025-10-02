@@ -1,0 +1,8 @@
+name = "zk-website"
+compatibility_date = "2024-10-02"
+
+[build]
+command = "bun run build"
+
+[build.environment_variables]
+NODE_VERSION = "20"
